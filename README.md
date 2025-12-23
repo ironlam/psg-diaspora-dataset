@@ -17,6 +17,19 @@
 
 > ⚠️ **Note**: Data for Seine-Saint-Denis (93) and Val-d'Oise (95) is currently missing due to Wikidata rate limiting. These are key départements for talent production.
 
+## Visualizations
+
+### Diaspora Distribution
+![Diaspora Regions](docs/figures/diaspora_regions_pie.png)
+
+### Top Origin Countries
+![Top Countries](docs/figures/top_countries_bar.png)
+
+### Birth Year Trends
+![Birth Years](docs/figures/birth_years_trend.png)
+
+*More charts available in `docs/figures/`*
+
 ## Project Overview
 
 This project aims to empirically test claims about the exceptional nature of the Île-de-France football "vivier" (talent pool) and its relationship to migration patterns. Rather than accepting intuitive narratives, we build a data-driven analysis.
@@ -104,22 +117,36 @@ psg-diaspora-dataset/
 - **Visualization**: `plotly`, `altair`, `matplotlib`
 - **Database**: `duckdb` (local), `postgresql` (optional)
 
-## Getting Started
+## Quick Start
 
 ```bash
-# Clone and setup
+# Clone the repo
+git clone https://github.com/ldiaby/psg-diaspora-dataset.git
 cd psg-diaspora-dataset
+
+# Setup environment
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-# Configure API keys (if needed)
-cp config/config.example.yaml config/config.yaml
-# Edit config.yaml with your keys
+# Run analysis on existing data
+python src/analysis/analyze_players.py
 
-# Run data collection
-python src/collectors/transfermarkt.py
-python src/collectors/insee.py
+# Generate visualizations
+python src/visualization/charts.py
+
+# Explore in Jupyter
+jupyter notebook notebooks/01_data_exploration.ipynb
+```
+
+## Data Collection
+
+```bash
+# Collect from Wikidata (already done, 713 players)
+python src/collectors/wikidata.py
+
+# Retry for missing départements (93, 95)
+python scripts/retry_93_95.py
 ```
 
 ## Ethical Considerations
