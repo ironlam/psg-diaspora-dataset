@@ -1,0 +1,267 @@
+# Configuration file for PSG Diaspora Dataset
+# Copy to config.yaml and fill in your values
+
+# =============================================================================
+# PROJECT SCOPE
+# =============================================================================
+scope:
+  # Focus: African diaspora in French football
+  focus: "african_diaspora_idf"
+
+  # Birth years to include (captures 2nd and 3rd generation)
+  birth_year_start: 1980
+  birth_year_end: 2006
+
+  # Career data range (France 98 as symbolic start)
+  career_year_start: 1998
+  career_year_end: 2024
+
+  # Project phases
+  phase: 1  # 1=IDF only, 2=Add London, 3=Add others
+
+# =============================================================================
+# DATA SOURCES
+# =============================================================================
+sources:
+  transfermarkt:
+    base_url: "https://www.transfermarkt.com"
+    rate_limit: 3  # seconds between requests
+
+  fbref:
+    base_url: "https://fbref.com"
+    rate_limit: 3
+
+  wikidata:
+    endpoint: "https://query.wikidata.org/sparql"
+    rate_limit: 1
+
+  insee:
+    base_url: "https://api.insee.fr/donnees-locales/V0.1"
+    api_key: ""  # Get from https://api.insee.fr/
+
+# =============================================================================
+# REGIONS OF INTEREST
+# =============================================================================
+regions:
+  ile_de_france:
+    code: "11"
+    country: "France"
+    departments:
+      - code: "75"
+        name: "Paris"
+      - code: "77"
+        name: "Seine-et-Marne"
+      - code: "78"
+        name: "Yvelines"
+      - code: "91"
+        name: "Essonne"
+      - code: "92"
+        name: "Hauts-de-Seine"
+      - code: "93"
+        name: "Seine-Saint-Denis"
+      - code: "94"
+        name: "Val-de-Marne"
+      - code: "95"
+        name: "Val-d'Oise"
+
+# Phase 2 comparison (not active in Phase 1)
+comparison_regions:
+  greater_london:
+    country: "England"
+    enabled: false  # Enable in Phase 2
+    boroughs: []    # To be populated
+
+# =============================================================================
+# SUCCESS METRICS (Multi-tier definition)
+# =============================================================================
+success_metrics:
+  # Tier 1: Basic professional
+  tier1_pro:
+    name: "Professional"
+    description: "Played professionally"
+    criteria:
+      min_pro_appearances: 10
+      leagues: "any_professional"
+
+  # Tier 2: Established professional
+  tier2_established:
+    name: "Established Pro"
+    description: "Significant professional career"
+    criteria:
+      min_pro_appearances: 50
+      leagues: "top_2_divisions"
+
+  # Tier 3: Top league player
+  tier3_top_league:
+    name: "Top 5 League"
+    description: "Played in a top 5 European league"
+    criteria:
+      min_appearances: 10
+      leagues:
+        - "Ligue 1"
+        - "Premier League"
+        - "La Liga"
+        - "Bundesliga"
+        - "Serie A"
+
+  # Tier 4: Elite/International
+  tier4_elite:
+    name: "International"
+    description: "Called up to senior national team"
+    criteria:
+      national_team_caps: 1
+      level: "senior"
+
+# =============================================================================
+# DIASPORA TRACKING
+# =============================================================================
+diaspora:
+  # Origins of interest for the study
+  origins_of_interest:
+    - region: "Sub-Saharan Africa"
+      countries:
+        - "Senegal"
+        - "Mali"
+        - "Ivory Coast"
+        - "Cameroon"
+        - "DR Congo"
+        - "Guinea"
+        - "Congo"
+        - "Gabon"
+        - "Togo"
+        - "Benin"
+        - "Burkina Faso"
+        - "Central African Republic"
+        - "Comoros"
+        - "Madagascar"
+
+    - region: "Maghreb"
+      countries:
+        - "Algeria"
+        - "Morocco"
+        - "Tunisia"
+
+    - region: "Overseas France"
+      territories:
+        - "Guadeloupe"
+        - "Martinique"
+        - "French Guiana"
+        - "Réunion"
+        - "Mayotte"
+
+  # How to identify diaspora connection
+  identification_methods:
+    - "birthplace_parents"      # Parents born abroad
+    - "dual_nationality"        # Has dual citizenship
+    - "national_team_choice"    # Plays for African/other NT
+    - "name_origin"             # Surname analysis (with caution)
+
+# =============================================================================
+# MEDIA CORPUS (NLP)
+# =============================================================================
+nlp:
+  spacy_model: "fr_core_news_lg"
+
+  # Media sources to analyze
+  media_sources:
+    - name: "L'Équipe"
+      type: "sports_daily"
+      url: "https://www.lequipe.fr"
+      priority: 1
+
+    - name: "Le Parisien"
+      type: "regional_daily"
+      url: "https://www.leparisien.fr"
+      priority: 1
+
+    - name: "So Foot"
+      type: "sports_magazine"
+      url: "https://www.sofoot.com"
+      priority: 2
+
+    - name: "Le Monde"
+      type: "national_daily"
+      url: "https://www.lemonde.fr"
+      priority: 2
+
+  # Keywords for discourse analysis
+  keywords:
+    quartiers:
+      - "quartier"
+      - "banlieue"
+      - "cité"
+      - "93"
+      - "Seine-Saint-Denis"
+      - "ZUP"
+      - "HLM"
+
+    origins:
+      - "origine"
+      - "racines"
+      - "parents"
+      - "binational"
+      - "double culture"
+      - "diaspora"
+
+    talent_narrative:
+      - "talent"
+      - "pépite"
+      - "prodige"
+      - "vivier"
+      - "formation"
+      - "titi"
+      - "pur produit"
+
+    social_mobility:
+      - "ascenseur social"
+      - "réussite"
+      - "parcours"
+      - "destin"
+      - "rêve"
+
+    stereotypes:  # To detect potentially problematic framing
+      - "physique"
+      - "puissance"
+      - "vitesse"
+      - "technique"
+      - "intelligence de jeu"
+
+# =============================================================================
+# OUTPUT SETTINGS
+# =============================================================================
+output:
+  data_dir: "data/processed"
+  figures_dir: "docs/figures"
+  reports_dir: "docs/reports"
+
+# =============================================================================
+# CLUBS TO TRACK
+# =============================================================================
+clubs:
+  # PSG and main IDF professional clubs
+  professional:
+    - name: "Paris Saint-Germain"
+      transfermarkt_id: "583"
+      priority: 1
+
+    - name: "Paris FC"
+      transfermarkt_id: "1969"
+      priority: 2
+
+    - name: "Red Star FC"
+      transfermarkt_id: "1078"
+      priority: 2
+
+  # Major IDF amateur clubs known for producing talent
+  amateur_feeders:
+    - "US Bondy"
+    - "Clairefontaine INF"
+    - "AS Bondy"
+    - "Tremblay FC"
+    - "Drancy JA"
+    - "Torcy"
+    - "Montfermeil"
+    - "Sarcelles"
+    - "Poissy"
+    - "Créteil-Lusitanos"
+    # Add more based on research
