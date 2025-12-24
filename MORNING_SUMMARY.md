@@ -24,8 +24,12 @@
 - `tests/test_data.py` - 8 passing tests
 
 ### Git Status
-- 3 commits made
+- 5 commits made
 - Ready to push to GitHub
+
+### Scripts Created
+- `scripts/retry_93_95.py` - Retry 93/95 data collection
+- `scripts/upload_huggingface.py` - Upload to HuggingFace Hub
 
 ---
 
