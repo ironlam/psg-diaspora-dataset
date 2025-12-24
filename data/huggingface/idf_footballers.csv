@@ -712,3 +712,455 @@ Q105722272,Océane Hurtré,2004-02-17,2004,,['France'],False,,[],Rennes
 Q106366721,Lesley Ugochukwu,2004-03-26,2004,,['France'],False,,[],Rennes
 Q136093633,Franck Tchaouna,2005-09-09,2005,,[],False,,[],Rennes
 Q121926210,Chouaïb Jikouni,2006-01-05,2006,,"['France', 'Maroc']",True,Maghreb,['Maroc'],Saint-Grégoire
+Q6891579,Mohamed Zaoui,1980-02-11,1980,93,['France'],False,,[],Saint-Denis
+Q250978,Djimi Traoré,1980-03-01,1980,,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Saint-Ouen-sur-Seine
+Q320517,Nicolas Douchez,1980-04-22,1980,93,['France'],False,,[],Rosny-sous-Bois
+Q2141202,Oumar Bakari,1980-04-30,1980,93,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Montreuil
+Q2629508,Steeve Elana,1980-07-11,1980,93,['France'],False,,[],Aubervilliers
+Q3507081,Sylvain Meslien,1980-08-07,1980,93,['France'],False,,[],Bondy
+Q4665184,Abdoulaye Soumaré,1980-11-07,1980,,['Belgique'],False,Other Europe,['Belgique'],Saint-Ouen-sur-Seine
+Q2707013,Grégory Arnolin,1980-11-10,1980,93,['France'],False,,[],Livry-Gargan
+Q3218037,Larry Clavier,1981-01-09,1981,93,['France'],False,,[],Bondy
+Q2457912,Edwin Ouon,1981-01-26,1981,93,"['France', 'Rwanda']",True,Sub-Saharan Africa,['Rwanda'],Aubervilliers
+Q2294670,Florian Boucansaud,1981-02-15,1981,,['France'],False,,[],Noisy-le-Sec
+Q358636,Jonathan Joseph-Augustin,1981-05-13,1981,93,['France'],False,,[],Tremblay-en-France
+Q3572033,Yazid Kaïssi,1981-05-16,1981,93,"['France', 'Maroc']",True,Maghreb,['Maroc'],Montreuil
+Q2303803,Ibrahim Tall,1981-06-23,1981,93,"['France', 'Sénégal']",True,Sub-Saharan Africa,['Sénégal'],Aubervilliers
+Q1926,Alou Diarra,1981-07-15,1981,93,['France'],False,,[],Villepinte
+Q482300,Adamo Coulibaly,1981-08-14,1981,93,"['France', 'Mali', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"['Mali', ""Côte d'Ivoire""]",Noisy-le-Grand
+Q3165999,Jean-Félix Dorothée,1981-10-02,1981,93,['France'],False,,[],Le Blanc-Mesnil
+Q2551989,Lionel Mathis,1981-10-04,1981,93,['France'],False,,[],Montreuil
+Q2300461,Grégory Cerdan,1982-07-28,1982,93,['France'],False,,[],Saint-Denis
+Q299403,Charles Itandje,1982-11-02,1982,93,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Bobigny
+Q1328583,Moussa Koita,1982-11-19,1982,93,['France'],False,,[],Saint-Denis
+Q3709230,Abel Thermeus,1983-01-19,1983,93,['France'],False,,[],Montreuil
+Q66809976,Xavier Pinoteau,1983-02-12,1983,93,['France'],False,,[],Saint-Denis
+Q2070432,Chaher Zarour,1983-03-14,1983,93,['France'],False,,[],Montreuil
+Q4792689,Armand Oné,1983-03-15,1983,93,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Villepinte
+Q6308678,Julien Delonglée,1983-03-23,1983,,['France'],False,,[],Montfermeil
+Q1233406,Matthieu Valverde,1983-05-14,1983,93,['France'],False,,[],Montreuil
+Q3193178,Karim Djellabi,1983-05-31,1983,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Épinay-sur-Seine
+Q6370601,Karim Kaddour,1983-06-06,1983,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Saint-Denis
+Q3479822,Serisay Barthélémy,1984-01-06,1984,93,['France'],False,,[],Le Blanc-Mesnil
+Q27533,Sigamary Diarra,1984-01-10,1984,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Villepinte
+Q19834007,Abdoulahy Sangaré,1984-01-14,1984,93,['Mauritanie'],False,Sub-Saharan Africa,['Mauritanie'],Épinay-sur-Seine
+Q2484987,Brice Jovial,1984-01-25,1984,93,['France'],False,,[],Aubervilliers
+Q365252,Hassoun Camara,1984-02-03,1984,,['France'],False,,[],Noisy-le-Sec
+Q471193,Ludovic Sylvestre,1984-02-05,1984,93,['France'],False,,[],Le Blanc-Mesnil
+Q2821000,Abdelaziz Kamara,1984-04-10,1984,93,"['France', 'Mauritanie']",True,Sub-Saharan Africa,['Mauritanie'],Saint-Denis
+Q3295416,Martin Ekani,1984-04-21,1984,93,['France'],False,,[],Aubervilliers
+Q3134404,Hervé Batoménila,1984-05-18,1984,,['France'],False,,[],Les Pavillons-sous-Bois
+Q3460498,Sabbah Meftah Saoues,1984-08-15,1984,93,['Algérie'],False,Maghreb,['Algérie'],Villepinte
+Q3266455,Luigi Glombard,1984-08-21,1984,93,['France'],False,,[],Montreuil
+Q3308696,Michaël Niçoise,1984-09-19,1984,93,['France'],False,,[],Bondy
+Q6215204,Johan Letzelter,1984-09-19,1984,93,['France'],False,,[],Montreuil
+Q1710261,Joël Sami,1984-11-13,1984,,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Montfermeil
+Q7029743,Nicolas Mirza,1984-11-18,1984,93,['France'],False,,[],Épinay-sur-Seine
+Q653714,Guy Moussi,1985-01-23,1985,93,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Bondy
+Q348956,Bakaye Traoré,1985-03-06,1985,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Bondy
+Q1404986,Mamadou Diakité,1985-05-22,1985,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Rosny-sous-Bois
+Q7368641,Rosere Manguelle,1985-05-22,1985,93,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Saint-Denis
+Q3266122,Ludovic Fardin,1985-06-10,1985,93,['France'],False,,[],Aubervilliers
+Q3324031,Morgaro Gomis,1985-07-14,1985,93,['France'],False,,[],Le Blanc-Mesnil
+Q895037,Boukary Dramé,1985-07-22,1985,93,"['France', 'Sénégal']",True,Sub-Saharan Africa,['Sénégal'],Villepinte
+Q1149984,Virgile Reset,1985-08-03,1985,93,['France'],False,,[],Les Lilas
+Q3574761,Zanké Diarra,1985-09-03,1985,93,['France'],False,,[],Villepinte
+Q6127935,Jamel Zahiri,1985-11-08,1985,,"['France', 'Maroc']",True,Maghreb,['Maroc'],Les Pavillons-sous-Bois
+Q10530123,Max Hilaire,1985-12-06,1985,93,"['France', 'Haïti']",True,Caribbean/Overseas,['Haïti'],Bondy
+Q4665156,Abdoul Diakité,1986-01-11,1986,,['Mali'],False,Sub-Saharan Africa,['Mali'],Montfermeil
+Q3471078,Samuel Camille,1986-02-02,1986,93,['France'],False,,[],Saint-Denis
+Q321649,Djamel Abdoun,1986-02-14,1986,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Montreuil
+Q3572984,Youssouf Touré,1986-03-14,1986,93,['France'],False,,[],Saint-Denis
+Q381147,Habib Bellaïd,1986-03-28,1986,93,"['France', 'Algérie', 'Tunisie']",True,Maghreb,"['Algérie', 'Tunisie']",Bobigny
+Q3497817,Steeve Penel,1986-04-24,1986,93,['France'],False,,[],Bobigny
+Q2325279,Mamadou Samassa,1986-05-01,1986,,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Montfermeil
+Q24088820,Aurélien Gazeau,1986-05-06,1986,93,['France'],False,,[],Montreuil
+Q5435252,Farid Hazem,1986-06-19,1986,93,['France'],False,,[],Montreuil
+Q3049484,Thomas Gamiette,1986-06-21,1986,93,['France'],False,,[],Épinay-sur-Seine
+Q7630095,Stéphen Vincent,1986-09-02,1986,93,['France'],False,,[],Neuilly-sur-Marne
+Q19521226,Farid Beziouen,1986-10-17,1986,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Saint-Denis
+Q946440,Steven Thicot,1987-02-14,1987,93,['France'],False,,[],Montreuil
+Q1776713,Sebastian De Maio,1987-03-05,1987,93,['France'],False,,[],Saint-Denis
+Q7395559,Saad Ichalalène,1987-03-27,1987,93,['Algérie'],False,Maghreb,['Algérie'],Saint-Denis
+Q516591,Ali Mathlouthi,1987-04-22,1987,93,"['France', 'Tunisie']",True,Maghreb,['Tunisie'],Saint-Denis
+Q721625,Serge Gakpé,1987-05-07,1987,93,"['France', 'Togo']",True,Sub-Saharan Africa,['Togo'],Bondy
+Q6694707,Loïc Lumbilla,1987-05-12,1987,93,['France'],False,,[],Saint-Denis
+Q106885661,Yannick Chevalier,1987-05-27,1987,93,[],False,,[],Saint-Denis
+Q3031122,Valentin Roberge,1987-06-09,1987,93,"['France', 'Chypre']",True,,[],Montreuil
+Q27739,Oumar Sissoko,1987-09-13,1987,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Montreuil
+Q2871992,Aurélie Conforti,1987-09-19,1987,93,['France'],False,,[],Aubervilliers
+Q922393,Larrys Mabiala,1987-10-08,1987,,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Montfermeil
+Q1945299,Chris Makiese,1987-10-14,1987,,['France'],False,,[],Montfermeil
+Q4752080,Anatole Ngamukol,1988-01-15,1988,93,"['France', 'Guinée équatoriale', 'République démocratique du Congo']",True,Sub-Saharan Africa,"['Guinée équatoriale', 'République démocratique du Congo']",Aubervilliers
+Q5534763,Geoffrey Malfleury,1988-01-20,1988,93,['France'],False,,[],Aubervilliers
+Q2749342,Johny Placide,1988-01-29,1988,,['France'],False,,[],Montfermeil
+Q2467915,Bira Dembélé,1988-03-22,1988,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Villepinte
+Q60611,Quentin Othon,1988-03-27,1988,93,['France'],False,,[],Montreuil
+Q10493248,Ritchie Zanga,1988-04-08,1988,93,['France'],False,,[],Drancy
+Q720879,Ibrahima Traoré,1988-04-21,1988,93,"['France', 'Guinée']",True,Sub-Saharan Africa,['Guinée'],Villepinte
+Q3343443,Nora Coton-Pélagie,1988-04-22,1988,93,['France'],False,,[],Les Lilas
+Q277898,Selim Bouadla,1988-08-26,1988,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Rosny-sous-Bois
+Q21055255,Fabrice Valcin,1988-09-04,1988,93,['France'],False,,[],Bobigny
+Q3324011,Morgane Adolphi,1988-09-17,1988,93,['France'],False,,[],Les Lilas
+Q81599,Jérémy Abadie,1988-10-17,1988,93,['France'],False,,[],Le Blanc-Mesnil
+Q2827596,Ahmed Kashi,1988-11-18,1988,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Aubervilliers
+Q2525331,William Vainqueur,1988-11-19,1988,93,"['France', 'Haïti']",True,Caribbean/Overseas,['Haïti'],Neuilly-sur-Marne
+Q5318714,Dylan Duventru,1989-01-03,1989,93,['France'],False,,[],Villepinte
+Q6809330,Mehdi Khalis,1989-01-06,1989,93,"['France', 'Maroc']",True,Maghreb,['Maroc'],Les Lilas
+Q5990854,Mamady Dianga,1989-01-10,1989,93,['Mali'],False,Sub-Saharan Africa,['Mali'],Montreuil
+Q1320504,Samba Diakité,1989-01-24,1989,,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Montfermeil
+Q2841178,Amara Baby,1989-02-23,1989,93,"['France', 'Sénégal']",True,Sub-Saharan Africa,['Sénégal'],Le Blanc-Mesnil
+Q21285522,Ludovic Saline,1989-03-23,1989,93,['France'],False,,[],Saint-Denis
+Q8057728,Youcef Touati,1989-03-29,1989,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Saint-Denis
+Q1747188,Mohamed Chalali,1989-04-04,1989,93,['France'],False,,[],Montreuil
+Q683335,Jonathan Rivierez,1989-05-18,1989,93,['France'],False,,[],Le Blanc-Mesnil
+Q4202264,Christopher Glombard,1989-06-05,1989,93,['France'],False,,[],Montreuil
+Q41998141,Aniss El Hriti,1989-07-28,1989,93,"['France', 'Maroc']",True,Maghreb,['Maroc'],Sevran
+Q60545,Moussa Sissoko,1989-08-16,1989,93,['France'],False,,[],Le Blanc-Mesnil
+Q7983982,Wesley Ngo Baheng,1989-09-23,1989,93,['France'],False,,[],Le Blanc-Mesnil
+Q6273598,Jonathan Kodjia,1989-10-22,1989,93,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Saint-Denis
+Q979558,Kevin Lafrance,1990-01-13,1990,93,"['France', 'Haïti']",True,Caribbean/Overseas,['Haïti'],Bondy
+Q3572348,Yoan Pivaty,1990-01-29,1990,93,['France'],False,,[],Montreuil
+Q21091476,Sofiane Ben Braham,1990-02-01,1990,,"['France', 'Algérie']",True,Maghreb,['Algérie'],Montfermeil
+Q3490763,Soni Mustivar,1990-02-12,1990,93,['France'],False,,[],Aubervilliers
+Q2944686,Mamadou Samassa,1990-02-16,1990,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Montreuil
+Q5112787,Christopher Maboulou,1990-03-19,1990,,"['France', 'République du Congo']",True,Sub-Saharan Africa,['République du Congo'],Montfermeil
+Q4831231,Ayhan Güçlü,1990-03-28,1990,92,['Turquie'],False,Other Europe,['Turquie'],Clichy-sous-Bois
+Q4665141,Abdou Doumbia,1990-06-07,1990,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Le Blanc-Mesnil
+Q2093248,Steven Joseph-Monrose,1990-07-20,1990,93,['France'],False,,[],Bondy
+Q60396,Fabrice Nsakala,1990-07-21,1990,93,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Le Blanc-Mesnil
+Q969529,Sébastien Corchia,1990-11-01,1990,,"['France', 'Italie']",True,Other Europe,['Italie'],Noisy-le-Sec
+Q4886408,Ben Sangaré,1990-11-12,1990,93,['France'],False,,[],Bondy
+Q108657967,Jaffray Nsimba,1991-01-11,1991,93,['France'],False,,[],Saint-Denis
+Q25999786,Loïc Gagnon,1991-01-21,1991,93,"['France', 'Togo']",True,Sub-Saharan Africa,['Togo'],Bondy
+Q3571834,Yannis Salibur,1991-01-24,1991,93,['France'],False,,[],Saint-Denis
+Q15850788,Thomas Monconduit,1991-02-10,1991,93,['France'],False,,[],Le Blanc-Mesnil
+Q18744820,Jean-David Legrand,1991-02-23,1991,93,['France'],False,,[],Saint-Denis
+Q7530301,Sirina Camara,1991-04-12,1991,93,['France'],False,,[],Pierrefitte-sur-Seine
+Q3241831,Lionel Carole,1991-04-12,1991,93,['France'],False,,[],Montreuil
+Q25316427,Romain Lejeune,1991-05-21,1991,93,['France'],False,,[],Drancy
+Q19609731,Thierry Bin,1991-06-01,1991,93,"['France', 'Cambodge']",True,Asia,['Cambodge'],Villepinte
+Q24450997,Samuel Yohou,1991-08-06,1991,93,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Villepinte
+Q64526776,Aïssatou Diadhiou,1991-09-08,1991,93,['Mali'],False,Sub-Saharan Africa,['Mali'],Saint-Denis
+Q129175,Kenny Lala,1991-10-03,1991,93,['France'],False,,[],Villepinte
+Q2344469,Blanstel Koussalouka,1991-10-25,1991,93,['France'],False,,[],Les Lilas
+Q23761952,Charles Traoré,1992-01-01,1992,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Aulnay-sous-Bois
+Q2534570,Alassane També,1992-01-26,1992,93,"['Italie', 'France', 'Mali']",True,Sub-Saharan Africa,"['Italie', 'Mali']",Villepinte
+Q6694713,Loïck Landre,1992-05-05,1992,93,['France'],False,,[],Aubervilliers
+Q2637074,Thievy Bifouma,1992-05-13,1992,93,['France'],False,,[],Saint-Denis
+Q107013010,Geoffray Durbant,1992-05-19,1992,93,"['France', 'Vietnam']",True,Asia,['Vietnam'],Bondy
+Q7396662,Sacha Petshi,1992-06-21,1992,93,['France'],False,,[],Villepinte
+Q6891092,Mohamed Benyahia,1992-06-30,1992,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Tremblay-en-France
+Q97674070,Sylia Koui,1992-07-27,1992,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Saint-Denis
+Q1059176,Mehdi Abeid,1992-08-06,1992,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Montreuil
+Q18619215,Marvin Diop,1992-08-08,1992,93,['France'],False,,[],Drancy
+Q27043565,Semih Beyaz,1992-08-16,1992,93,"['Turquie', 'France']",True,Other Europe,['Turquie'],Bondy
+Q16937394,Guillaume Khous,1992-08-18,1992,93,['France'],False,,[],Tremblay-en-France
+Q83005282,Diaguely Dabo,1992-08-26,1992,93,"['France', 'Mali', 'Sénégal']",True,Sub-Saharan Africa,"['Mali', 'Sénégal']",Saint-Denis
+Q104444252,Laëtitia Mathieu,1992-08-27,1992,93,['France'],False,,[],Les Lilas
+Q97674093,Teninsoun Sissoko,1992-09-02,1992,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Saint-Denis
+Q17540063,Emre Akbaba,1992-10-04,1992,93,"['France', 'Turquie']",True,Other Europe,['Turquie'],Saint-Denis
+Q6425681,Koffi Djidji,1992-11-30,1992,93,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Bagnolet
+Q107565778,Anthony Baron,1992-12-29,1992,93,['France'],False,,[],Villepinte
+Q16235804,Richard-Quentin Samnick,1993-01-23,1993,93,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Noisy-le-Grand
+Q56063471,Philtzgérald Mbaka,1993-01-24,1993,93,['France'],False,,[],Villepinte
+Q16144725,Rachid Aït-Atmane,1993-02-04,1993,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Bobigny
+Q6960631,Nakibou Aboubakari,1993-03-10,1993,93,"['France', 'Comores']",True,Comoros,['Comores'],Saint-Denis
+Q56249978,Mamadou Kamissoko,1993-04-15,1993,93,[],False,,[],Le Blanc-Mesnil
+Q60583,Jean-Christophe Bahebeck,1993-05-01,1993,93,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Saint-Denis
+Q16235692,Johann Obiang,1993-07-05,1993,93,['Gabon'],False,Sub-Saharan Africa,['Gabon'],Le Blanc-Mesnil
+Q57554723,Bradley Meledje,1993-07-17,1993,93,['France'],False,,[],Saint-Denis
+Q56043349,Florian Lapis,1993-08-08,1993,93,['France'],False,,[],Saint-Denis
+Q29046665,Boubakary Diarra,1993-08-30,1993,93,['Mali'],False,Sub-Saharan Africa,['Mali'],Villepinte
+Q4907532,Bilal Ouali,1993-10-07,1993,,['Algérie'],False,Maghreb,['Algérie'],Montfermeil
+Q4241680,Raphaël Guerreiro,1993-12-22,1993,93,"['France', 'Portugal']",True,Portugal,['Portugal'],Le Blanc-Mesnil
+Q66176501,Joris Correa,1993-12-25,1993,93,['France'],False,,[],Drancy
+Q117407869,Bakari Camara,1994-01-04,1994,93,['France'],False,,[],Aulnay-sous-Bois
+Q17579882,Haris Belkebla,1994-01-28,1994,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],La Courneuve
+Q16151189,Anderson Banvo,1994-02-04,1994,93,[],False,,[],Romainville
+Q18044346,Hassane Kamara,1994-03-05,1994,93,"['France', 'Mali', 'Gambie', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"['Mali', 'Gambie', ""Côte d'Ivoire""]",Saint-Denis
+Q20821351,Harrison Manzala,1994-03-06,1994,93,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Aubervilliers
+Q30122326,Ibrahim Sangaré,1994-03-15,1994,93,['France'],False,,[],Montreuil
+Q41497926,Redouane Kerrouche,1994-04-26,1994,,"['France', 'Algérie']",True,Maghreb,['Algérie'],Noisy-le-Sec
+Q44821118,Willy Semedo,1994-04-27,1994,,"['France', 'Cap-Vert']",True,Sub-Saharan Africa,['Cap-Vert'],Montfermeil
+Q16145867,Abdallah Yaisien,1994-05-23,1994,93,"['France', 'Égypte', 'Algérie']",True,Maghreb,"['Égypte', 'Algérie']",Bondy
+Q14371131,Steven Moreira,1994-08-13,1994,93,"['France', 'Cap-Vert']",True,Sub-Saharan Africa,['Cap-Vert'],Noisy-le-Grand
+Q41090800,Saïd Bakari,1994-09-22,1994,93,"['France', 'Comores']",True,Comoros,['Comores'],La Courneuve
+Q66091160,Wafat Mari,1994-09-26,1994,93,['Comores'],False,Comoros,['Comores'],Neuilly-sur-Marne
+Q7187958,Thomas Phousseyne Diaby,1995-01-06,1995,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Saint-Denis
+Q52341875,Alexis Souahy,1995-01-13,1995,93,"['France', 'Comores']",True,Comoros,['Comores'],Montreuil
+Q20089300,Nader Ghandri,1995-02-18,1995,93,"['France', 'Tunisie']",True,Maghreb,['Tunisie'],Aubervilliers
+Q21055272,Mamadou Thiam,1995-03-20,1995,93,"['France', 'Sénégal']",True,Sub-Saharan Africa,['Sénégal'],Aubervilliers
+Q15964597,Driss Trichard,1995-03-27,1995,93,"['France', 'Maroc']",True,Maghreb,['Maroc'],Aubervilliers
+Q15063279,Wesley Saïd,1995-04-19,1995,93,"['France', 'Comores', 'Maurice']",True,Sub-Saharan Africa,"['Comores', 'Maurice']",Noisy-le-Grand
+Q23063348,Selim Ilgaz,1995-06-22,1995,,"['Turquie', 'France']",True,Other Europe,['Turquie'],Montfermeil
+Q16237072,Lenda Vumbi,1995-07-13,1995,93,['France'],False,,[],Aubervilliers
+Q21005501,Thomas-Steven Da Veiga,1995-07-25,1995,93,['France'],False,,[],Neuilly-sur-Marne
+Q27736532,Axel Kacou,1995-08-01,1995,93,['France'],False,,[],Saint-Denis
+Q26902702,Enes Can Akgün,1995-09-20,1995,93,"['Turquie', 'France']",True,Other Europe,['Turquie'],Livry-Gargan
+Q21004277,Alassane Diaby,1995-10-06,1995,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Saint-Denis
+Q40991902,Fousseni Diabaté,1995-10-18,1995,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Aubervilliers
+Q36694978,Brighton Labeau,1996-01-01,1996,93,['France'],False,,[],Aubervilliers
+Q22958950,Nathan Dekoke,1996-01-06,1996,93,['France'],False,,[],Aubervilliers
+Q18719399,Mohamed Salim Farès,1996-02-15,1996,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Aubervilliers
+Q19518630,Isaac Mbenza,1996-03-08,1996,93,['Belgique'],False,Other Europe,['Belgique'],Saint-Denis
+Q21530896,Brahim Konaté,1996-03-20,1996,,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Montfermeil
+Q56043370,Loïc Lapoussin,1996-03-27,1996,93,['France'],False,,[],Rosny-sous-Bois
+Q27825740,Djibril Dianessy,1996-03-29,1996,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Villemomble
+Q51965167,Namakoro Diallo,1996-03-29,1996,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Saint-Denis
+Q47506103,Mamadou Sissako,1996-04-20,1996,93,['France'],False,,[],Villepinte
+Q99249799,Cyril Zabou,1996-06-18,1996,93,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Bondy
+Q56877154,Bilel Aït Malek,1996-08-19,1996,93,"['France', 'Tunisie']",True,Maghreb,['Tunisie'],Saint-Denis
+Q122460961,Adama Camara,1996-10-18,1996,93,['France'],False,,[],Bondy
+Q92206201,Ivan Inzoudine,1996-12-10,1996,93,['France'],False,,[],Bobigny
+Q26838702,Aïssa Laïdouni,1996-12-13,1996,93,"['France', 'Algérie', 'Tunisie']",True,Maghreb,"['Algérie', 'Tunisie']",Livry-Gargan
+Q55956361,Matias Ferreira,1997-01-01,1997,93,['France'],False,,[],Les Lilas
+Q22277955,Joris Gnagnon,1997-01-13,1997,93,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Bondy
+Q42763993,Maxime Leverbe,1997-02-15,1997,93,['France'],False,,[],Villepinte
+Q123326758,Mara Wagué,1997-03-18,1997,93,['France'],False,,[],Villepinte
+Q50380281,Alan Dzabana,1997-03-25,1997,93,"['France', 'République du Congo']",True,Sub-Saharan Africa,['République du Congo'],Livry-Gargan
+Q105536694,Lina Chabane,1997-04-14,1997,93,"['France', 'Algérie', 'Maroc']",True,Maghreb,"['Algérie', 'Maroc']",Les Lilas
+Q26964668,Jean-Philippe Mateta,1997-06-28,1997,93,['France'],False,,[],Sevran
+Q97730202,Maeva Salomon,1997-06-29,1997,93,['France'],False,,[],Villepinte
+Q30305316,Eden Massouema,1997-06-29,1997,93,"['France', 'République du Congo']",True,Sub-Saharan Africa,['République du Congo'],Villepinte
+Q38167881,Mehdi Merghem,1997-07-19,1997,93,['France'],False,,[],Aubervilliers
+Q42310100,Lamine Ba,1997-08-24,1997,93,['France'],False,,[],Villepinte
+Q20745071,Nordi Mukiele,1997-11-01,1997,93,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Montreuil
+Q55934972,Elisha Owusu,1997-11-07,1997,93,"['France', 'Ghana']",True,Sub-Saharan Africa,['Ghana'],Montreuil
+Q28077976,Harold Moukoudi,1997-11-27,1997,93,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Bondy
+Q69691705,Evans Jean-Lambert,1998-01-01,1998,93,['France'],False,,[],Bagnolet
+Q56486404,Samuel Essende,1998-01-23,1998,,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Montfermeil
+Q29412269,Lamine Fomba,1998-01-26,1998,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Rosny-sous-Bois
+Q99198840,Jeremy Petris,1998-01-28,1998,93,['France'],False,,[],Bagnolet
+Q122831751,Kilian Bevis,1998-02-13,1998,93,['France'],False,,[],Villepinte
+Q38335548,Wilfried Kanga,1998-02-21,1998,93,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Montreuil
+Q78069488,Sana Daoudi,1998-03-12,1998,93,"['France', 'Maroc']",True,Maghreb,['Maroc'],Saint-Denis
+Q66309755,Jason Tré,1998-03-18,1998,93,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Saint-Denis
+Q20666686,Jonathan Ikoné,1998-05-02,1998,93,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Bondy
+Q117187756,Messie Biatoumoussoka,1998-06-05,1998,93,"['France', 'République du Congo']",True,Sub-Saharan Africa,['République du Congo'],Saint-Denis
+Q35537374,Alexis Claude-Maurice,1998-06-06,1998,93,['France'],False,,[],Noisy-le-Grand
+Q20666436,Faitout Maouassa,1998-07-06,1998,93,['France'],False,,[],Villepinte
+Q29226234,Ryan Laplace,1998-07-25,1998,93,['France'],False,,[],Saint-Denis
+Q110494248,Yannis Ngakoutou,1998-09-30,1998,93,"['France', 'République centrafricaine', 'Gabon']",True,Sub-Saharan Africa,"['République centrafricaine', 'Gabon']",Saint-Denis
+Q52160349,Yacine Bourhane,1998-09-30,1998,93,"['France', 'Comores']",True,Comoros,['Comores'],Noisy-le-Grand
+Q59655998,Randal Kolo Muani,1998-12-05,1998,93,['France'],False,,[],Bondy
+Q63215838,Lina Boussaha,1999-01-16,1999,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Saint-Denis
+Q60050076,Yassine Benrahou,1999-01-24,1999,93,"['France', 'Maroc']",True,Maghreb,['Maroc'],Le Blanc-Mesnil
+Q45935395,Pape Gueye,1999-01-24,1999,93,"['France', 'Sénégal']",True,Sub-Saharan Africa,['Sénégal'],Montreuil
+Q58303212,Kalidou Sidibé,1999-01-28,1999,93,['France'],False,,[],Montreuil
+Q23772079,Yassin Fortune,1999-01-30,1999,93,['France'],False,,[],Aubervilliers
+Q43369896,Boubakary Soumaré,1999-02-27,1999,,['France'],False,,[],Noisy-le-Sec
+Q63197538,Metehan Güçlü,1999-04-02,1999,,"['Turquie', 'France']",True,Other Europe,['Turquie'],Montfermeil
+Q47523443,Modibo Sagnan,1999-04-14,1999,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Saint-Denis
+Q66809843,Shaquil Delos,1999-06-17,1999,93,['France'],False,,[],Les Lilas
+Q38198180,Sikou Niakaté,1999-07-10,1999,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Montreuil
+Q59180482,Evens Joseph,1999-07-16,1999,93,['France'],False,,[],Neuilly-sur-Marne
+Q66097788,Arnaud Luzayadio,1999-07-19,1999,93,['France'],False,,[],Montreuil
+Q106858521,Ryan Bouallak,1999-08-19,1999,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Montreuil
+Q64010489,Yehvann Diouf,1999-11-16,1999,93,"['France', 'Sénégal']",True,Sub-Saharan Africa,['Sénégal'],Montreuil
+Q72423857,Idriss Mzaouiyani,2000-01-15,2000,93,['France'],False,,[],Le Blanc-Mesnil
+Q110940304,Haby Guereve,2000-02-06,2000,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Bondy
+Q106087236,Nsana Simon,2000-03-11,2000,93,"['France', 'République du Congo']",True,Sub-Saharan Africa,['République du Congo'],Saint-Denis
+Q107649655,Bilal Brahimi,2000-03-28,2000,93,"['France', 'Maroc']",True,Maghreb,['Maroc'],Villepinte
+Q107642644,Mahamadou Doucouré,2000-05-22,2000,93,['Mali'],False,Sub-Saharan Africa,['Mali'],Montreuil
+Q61993646,Leroy Abanda Mfomo,2000-06-07,2000,93,"['Pologne', 'France', 'Cameroun']",True,Sub-Saharan Africa,"['Pologne', 'Cameroun']",Le Blanc-Mesnil
+Q53870671,Quentin Constanciel,2000-07-13,2000,,['France'],False,,[],Montfermeil
+Q113389164,Kévin Mouanga,2000-07-24,2000,93,"['France', 'République du Congo']",True,Sub-Saharan Africa,['République du Congo'],Bondy
+Q105484254,Tony Lesueur,2000-08-19,2000,93,['France'],False,,[],Épinay-sur-Seine
+Q105081387,Chams Faraji,2000-09-01,2000,93,"['France', 'Maroc']",True,Maghreb,['Maroc'],Villepinte
+Q63699748,Sacha Boey,2000-09-13,2000,93,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Montreuil
+Q66586585,Moussa Diarra,2000-11-10,2000,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Stains
+Q65951999,Eric Junior Dina-Ebimbe,2000-11-21,2000,93,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Stains
+Q107340128,Abdourahim Moina,2000-12-17,2000,93,"['France', 'Comores']",True,Comoros,['Comores'],Saint-Denis
+Q108051106,Ateef Konaté,2001-01-01,2001,93,['France'],False,,[],Aubervilliers
+Q110904369,Abdoulaye Ouattara,2001-01-08,2001,93,['France'],False,,[],Montreuil
+Q105418822,Thomas Némouthé,2001-01-16,2001,93,['France'],False,,[],Le Blanc-Mesnil
+Q105075114,Mamadou Camara,2001-02-07,2001,93,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Aubervilliers
+Q112623666,Alexandre Pierre,2001-02-25,2001,93,"['France', 'Haïti']",True,Caribbean/Overseas,['Haïti'],Aubervilliers
+Q56868118,William Saliba,2001-03-24,2001,93,"['France', 'Liban', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Bondy
+Q110184199,Logan Costa,2001-04-01,2001,93,"['France', 'Cap-Vert']",True,Sub-Saharan Africa,['Cap-Vert'],Saint-Denis
+Q124419266,Noha Ndombasi,2001-04-28,2001,93,['France'],False,,[],Bondy
+Q104214604,Loris Mouyokolo,2001-05-22,2001,93,['France'],False,,[],Drancy
+Q50825738,Rayan Aït-Nouri,2001-06-06,2001,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Montreuil
+Q58313463,Han-Noah Massengo,2001-07-07,2001,93,"['France', 'République du Congo']",True,Sub-Saharan Africa,['République du Congo'],Villepinte
+Q107723702,Jordy Makengo,2001-08-03,2001,93,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Saint-Denis
+Q124611415,Mélinne D'Oria,2001-08-07,2001,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Drancy
+Q124637535,Nassima Bekhti,2001-11-13,2001,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Montreuil
+Q112107491,Mohamed Achi,2002-01-16,2002,93,['France'],False,,[],Bondy
+Q74050136,Brandon Soppy,2002-02-02,2002,93,['France'],False,,[],Aubervilliers
+Q108910786,Maghnes Akliouche,2002-02-25,2002,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Tremblay-en-France
+Q124647358,Idjessi Metsoko,2002-03-14,2002,93,[],False,,[],Stains
+Q114842149,Skelly Alvero,2002-05-02,2002,93,"['France', 'Angola', 'République démocratique du Congo']",True,Sub-Saharan Africa,"['Angola', 'République démocratique du Congo']",Stains
+Q100524709,Felix Irorere,2002-06-21,2002,93,"['France', 'Allemagne', 'Nigeria']",True,Sub-Saharan Africa,"['Allemagne', 'Nigeria']",Saint-Denis
+Q63636233,Adil Aouchiche,2002-07-15,2002,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Le Blanc-Mesnil
+Q105722273,Hawa Sangaré,2002-07-20,2002,93,['France'],False,,[],Villepinte
+Q104444665,Nada Liratnia,2002-08-02,2002,93,['France'],False,,[],Stains
+Q98088256,Kenza Chapelle,2002-08-22,2002,93,"['France', 'Maroc']",True,Maghreb,['Maroc'],Montreuil
+Q117735093,Qays Salhi,2002-10-06,2002,93,"['France', 'Tunisie']",True,Maghreb,['Tunisie'],Livry-Gargan
+Q104433397,Check Oumar Diakité,2002-12-05,2002,93,['France'],False,,[],Montreuil
+Q97754456,Wissem Bouzid,2002-12-18,2002,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Bagnolet
+Q106962934,Yanis Lhéry,2003-01-01,2003,93,['France'],False,,[],Tremblay-en-France
+Q125019187,Rayan Lutin,2003-01-16,2003,93,['Comores'],False,Comoros,['Comores'],Villepinte
+Q104764325,Etienne Camara,2003-03-30,2003,93,['France'],False,,[],Noisy-le-Grand
+Q128871829,Moussa Cissé,2003-04-29,2003,93,[],False,,[],Saint-Denis
+Q77418799,Vicki Becho,2003-10-03,2003,93,['France'],False,,[],Montreuil
+Q110390851,Soungoutou Magassa,2003-10-08,2003,93,['France'],False,,[],Stains
+Q108446819,Soumaïla Coulibaly,2003-10-14,2003,,['France'],False,,[],Montfermeil
+Q101067809,Ange-Yoan Bonny,2003-10-25,2003,93,['France'],False,,[],Aubervilliers
+Q112613691,Breyton Fougeu,2004-01-06,2004,93,['France'],False,,[],Tremblay-en-France
+Q98777530,Mohamed-Ali Cho,2004-01-19,2004,93,"['France', 'Royaume-Uni', ""Côte d'Ivoire"", 'Maroc']",True,Maghreb,"[""Côte d'Ivoire"", 'Maroc']",Stains
+Q135670639,Mohamed Sylla,2004-01-30,2004,93,['France'],False,,[],Aubervilliers
+Q118113828,Ivane Chegra,2004-03-03,2004,93,"['France', 'Algérie']",True,Maghreb,['Algérie'],Montreuil
+Q117266388,David Mokwa,2004-05-03,2004,93,['France'],False,,[],Bagnolet
+Q116972162,Reda Belahyane,2004-06-01,2004,93,['France'],False,,[],Aubervilliers
+Q137193673,Q137193673,2004-06-13,2004,93,['France'],False,,[],Bondy
+Q113505780,Malamine Efekele,2004-07-19,2004,93,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Livry-Gargan
+Q124215898,Issiaka Kamate,2004-08-02,2004,93,['France'],False,,[],Aulnay-sous-Bois
+Q121383956,Thérence Koudou,2004-12-13,2004,93,['France'],False,,[],Livry-Gargan
+Q112056307,Saël Kumbedi,2005-03-26,2005,93,['France'],False,,[],Stains
+Q124810816,Dehmaine Assoumani,2005-04-17,2005,93,['France'],False,,[],Drancy
+Q116052667,Jean-Mattéo Bahoya,2005-05-07,2005,,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Montfermeil
+Q116551506,Moussa Soumano,2005-07-09,2005,93,['France'],False,,[],Saint-Denis
+Q124283398,Jérémy Jacquet,2005-07-13,2005,93,['France'],False,,[],Bondy
+Q118747110,Mathis Lambourde,2006-01-09,2006,93,['France'],False,,[],Les Lilas
+Q123458677,Mathis Amougou,2006-01-18,2006,93,['France'],False,,[],Le Blanc-Mesnil
+Q111280241,Warren Zaïre-Emery,2006-03-08,2006,93,['France'],False,,[],Montreuil
+Q124175192,Senny Mayulu,2006-05-17,2006,93,['France'],False,,[],Le Blanc-Mesnil
+Q118220486,Liana Joseph,2006-08-15,2006,93,['France'],False,,[],Bondy
+Q110995393,Ethan Mbappé,2006-12-29,2006,93,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Montreuil
+Q1395477,Frédéric Thomas,1980-08-10,1980,95,['France'],False,,[],Sarcelles
+Q607171,Michaël Citony,1980-08-21,1980,95,['France'],False,,[],Villiers-le-Bel
+Q5111763,Christophe Freitas,1981-05-09,1981,95,['France'],False,,[],Ermont
+Q2313406,Sébastien Carole,1982-09-08,1982,95,['France'],False,,[],Pontoise
+Q2449794,Rémi Maréval,1983-02-24,1983,,['France'],False,,[],Domont
+Q2293730,Franck Béria,1983-05-23,1983,95,['France'],False,,[],Argenteuil
+Q3090279,Frédéric Weis,1983-05-28,1983,95,['France'],False,,[],Ermont
+Q2899241,Jonathan Assous,1983-09-02,1983,95,"['France', 'Israël']",True,,[],Sarcelles
+Q6925874,Mourad N'Zif,1984-01-01,1984,,"['France', 'Maroc']",True,Maghreb,['Maroc'],Domont
+Q2300444,Jean Calvé,1984-04-30,1984,75,['France'],False,,[],Cormeilles-en-Parisis
+Q1406968,Christian Nadé,1984-09-18,1984,95,['France'],False,,[],Montmorency
+Q933945,Mohamed Fofana,1985-03-07,1985,,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Gonesse
+Q3093909,Gabriel Pigrée,1985-03-18,1985,95,['France'],False,,[],Sarcelles
+Q4895882,Bertrand N'Dzomo,1985-06-18,1985,,['France'],False,,[],Domont
+Q6215192,Johan Lapeyre,1985-08-03,1985,,['France'],False,,[],Le Plessis-Bouchard
+Q1403166,Aurélien Collin,1986-03-08,1986,95,"['France', 'Venezuela']",True,,[],Enghien-les-Bains
+Q23887857,Jérôme Hergault,1986-04-05,1986,95,['France'],False,,[],Montmorency
+Q2073235,Yoann Djidonou,1986-05-17,1986,,['Bénin'],False,Sub-Saharan Africa,['Bénin'],Domont
+Q7783891,Thibault Marchal,1986-05-22,1986,95,['France'],False,,[],Montmorency
+Q813899,Bédi Buval,1986-06-16,1986,,['France'],False,,[],Domont
+Q6274619,Jonathan Tokplé,1986-07-29,1986,95,"['France', 'Togo']",True,Sub-Saharan Africa,['Togo'],Sarcelles
+Q6838501,Mickaël Gaffoor,1987-01-21,1987,95,['France'],False,,[],Bezons
+Q367324,Yohan Betsch,1987-02-16,1987,95,['France'],False,,[],Argenteuil
+Q7554978,Soilhyo Mété,1988-01-05,1988,95,['France'],False,,[],Soisy-sous-Montmorency
+Q109516369,Mamadou Fofana,1988-01-07,1988,95,['France'],False,,[],Sarcelles
+Q459315,Marie-Laure Delie,1988-01-29,1988,95,['France'],False,,[],Villiers-le-Bel
+Q22674382,Alliou Dembélé,1988-02-01,1988,95,['France'],False,,[],Pontoise
+Q20897975,Walter Vaz,1988-02-11,1988,95,['France'],False,,[],Montmorency
+Q5524620,Gary Assous,1988-03-04,1988,95,['France'],False,,[],Sarcelles
+Q3817795,Kévin Vinetot,1988-06-14,1988,95,['France'],False,,[],Villiers-le-Bel
+Q6493858,Lassana Doucoure,1988-09-24,1988,,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Beaumont-sur-Oise
+Q109796826,Nicolas Chéron,1989-01-03,1989,95,['France'],False,,[],Sarcelles
+Q6370566,Karim Boutadjine,1989-03-22,1989,95,"['France', 'Algérie']",True,Maghreb,['Algérie'],Argenteuil
+Q1367689,Younousse Sankharé,1989-09-10,1989,95,"['France', 'Sénégal']",True,Sub-Saharan Africa,['Sénégal'],Sarcelles
+Q10518472,Sofian Saidi,1989-09-25,1989,95,['France'],False,,[],Argenteuil
+Q110643304,Raphaël Adicéam,1990-01-01,1990,95,['France'],False,,[],Argenteuil
+Q3092312,Félicité Hamidouche,1990-01-21,1990,95,['France'],False,,[],Pontoise
+Q28113092,Sofiane Choubani,1990-03-29,1990,95,['France'],False,,[],Argenteuil
+Q23897555,Rachid Housni,1990-05-02,1990,95,"['France', 'Maroc']",True,Maghreb,['Maroc'],Sarcelles
+Q57313845,Fatah Ahamada,1990-07-04,1990,95,['Comores'],False,Comoros,['Comores'],Montmorency
+Q137128,Wissam Ben Yedder,1990-08-12,1990,95,['France'],False,,[],Sarcelles
+Q2475722,Vincent Pajot,1990-08-19,1990,,['France'],False,,[],Domont
+Q3125966,Halifa Soulé,1990-11-12,1990,,['Comores'],False,Comoros,['Comores'],Gonesse
+Q541152,Yacine Qasmi,1991-01-03,1991,95,"['France', 'Maroc']",True,Maghreb,['Maroc'],Pontoise
+Q6969904,Nathaniel Virayie,1991-01-06,1991,95,['France'],False,,[],Enghien-les-Bains
+Q1872717,Loïc Damour,1991-01-08,1991,95,['France'],False,,[],Soisy-sous-Montmorency
+Q66309873,Franck Julienne,1991-03-07,1991,,['France'],False,,[],Gonesse
+Q49037020,Hendrick Cakin,1992-01-06,1992,95,['France'],False,,[],Sarcelles
+Q6320138,Jérémy Labor,1992-03-19,1992,95,['France'],False,,[],Pontoise
+Q520100,Gaël Nlundulu,1992-04-29,1992,95,['France'],False,,[],Villiers-le-Bel
+Q868042,Ella Kaabachi,1992-05-15,1992,95,"['France', 'Tunisie']",True,Maghreb,['Tunisie'],Argenteuil
+Q20641275,Amine Oudrhiri,1992-11-04,1992,95,"['France', 'Maroc']",True,Maghreb,['Maroc'],Ermont
+Q27735353,Yoann Salmier,1992-11-21,1992,95,['France'],False,,[],Villiers-le-Bel
+Q798370,Steeve Yago,1992-12-16,1992,95,"['France', 'Burkina Faso']",True,Sub-Saharan Africa,['Burkina Faso'],Sarcelles
+Q3191047,Jérôme Roussillon,1993-01-06,1993,95,['France'],False,,[],Sarcelles
+Q90404981,Devis Epassy,1993-02-02,1993,95,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Soisy-sous-Montmorency
+Q55956117,Alexandre Ramalingom,1993-03-17,1993,95,['France'],False,,[],Pontoise
+Q16657198,Laurent Dos Santos,1993-03-21,1993,95,"['France', 'Portugal']",True,Portugal,['Portugal'],Montmorency
+Q376902,Dimitri Foulquier,1993-03-23,1993,95,['France'],False,,[],Sarcelles
+Q16890648,Nicolas Rajsel,1993-05-31,1993,95,['Slovénie'],False,,[],Pontoise
+Q3291256,Mariane Amaro,1993-09-17,1993,95,"['France', 'Portugal']",True,Portugal,['Portugal'],Montmorency
+Q18164690,Alvin Arrondel,1993-11-11,1993,95,['France'],False,,[],Cergy-Pontoise
+Q16236092,Christopher Dilo,1994-01-05,1994,95,['France'],False,,[],Argenteuil
+Q21622784,Stanley Segarel,1994-03-04,1994,95,['France'],False,,[],Villiers-le-Bel
+Q64526815,Aminata Doucouré,1994-04-03,1994,,['Mali'],False,Sub-Saharan Africa,['Mali'],Gonesse
+Q66972720,Kader Bamba,1994-04-25,1994,95,['France'],False,,[],Sarcelles
+Q26924356,Thomas Dasquet,1994-06-03,1994,95,['France'],False,,[],Argenteuil
+Q50505421,Louis Mafouta,1994-07-02,1994,,"['France', 'République centrafricaine']",True,Sub-Saharan Africa,['République centrafricaine'],Beaumont-sur-Oise
+Q55956114,Aboubakary Kanté,1994-08-11,1994,95,"['France', 'Gambie']",True,Sub-Saharan Africa,['Gambie'],Pontoise
+Q56065705,Senou Coulibaly,1994-09-04,1994,95,['Mali'],False,Sub-Saharan Africa,['Mali'],Pontoise
+Q51277870,Maxime Giron,1994-09-15,1994,,['France'],False,,[],Gonesse
+Q23007778,Thomas Henry,1994-09-20,1994,95,['France'],False,,[],Argenteuil
+Q108853594,Gustave Akueson,1995-01-01,1995,95,"['France', 'Togo']",True,Sub-Saharan Africa,['Togo'],Ermont
+Q17419164,Yarouba Cissako,1995-01-08,1995,95,['France'],False,,[],Pontoise
+Q22280180,Dylan Saint-Louis,1995-04-26,1995,,"['France', 'Haïti', 'République du Congo']",True,Sub-Saharan Africa,"['Haïti', 'République du Congo']",Gonesse
+Q19968679,Grejohn Kyei,1995-08-12,1995,,['France'],False,,[],Gonesse
+Q18325379,Presnel Kimpembe,1995-08-13,1995,,['France'],False,,[],Beaumont-sur-Oise
+Q62024841,Bruno Zebie,1995-08-14,1995,75,"['France', 'Canada', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Cormeilles-en-Parisis
+Q60734357,Sékou Baradji,1995-08-30,1995,95,"['France', 'Mali', 'Sénégal']",True,Sub-Saharan Africa,"['Mali', 'Sénégal']",Cergy-Pontoise
+Q34360045,Dylan Batubinsika,1996-02-15,1996,95,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Cergy-Pontoise
+Q110944273,Dylan Alexis Romney,1996-02-17,1996,,['France'],False,,[],Gonesse
+Q97753840,Alice Benoît,1996-03-27,1996,95,['France'],False,,[],Ermont
+Q48516387,Yohan Demoncy,1996-04-07,1996,,['France'],False,,[],Gonesse
+Q28606395,James Léa-Siliki,1996-06-12,1996,95,"['France', 'Cameroun']",True,Sub-Saharan Africa,['Cameroun'],Sarcelles
+Q15358470,Moussa Dembélé,1996-07-12,1996,95,['France'],False,,[],Pontoise
+Q66098700,Tidiane Keita,1996-09-18,1996,,['France'],False,,[],Gonesse
+Q108419357,Melvyn Doremus,1996-10-29,1996,,"['France', 'Bénin']",True,Sub-Saharan Africa,['Bénin'],Sannois
+Q67629721,Adel Bettaïeb,1997-01-28,1997,95,"['France', 'Tunisie', 'Maroc']",True,Maghreb,"['Tunisie', 'Maroc']",Villiers-le-Bel
+Q29588751,Jason Pendant,1997-02-09,1997,95,"['France', 'Vietnam']",True,Asia,['Vietnam'],Sarcelles
+Q20895998,Andy Faustin,1997-03-25,1997,95,['France'],False,,[],Sarcelles
+Q26034345,Amine Harit,1997-06-18,1997,95,"['France', 'Maroc']",True,Maghreb,['Maroc'],Pontoise
+Q30381567,Amine Bassi,1997-11-27,1997,95,"['France', 'Maroc']",True,Maghreb,['Maroc'],Bezons
+Q60050155,Sébastien Cibois,1998-03-02,1998,95,['France'],False,,[],Argenteuil
+Q23887767,Axel Disasi,1998-03-11,1998,,['France'],False,,[],Gonesse
+Q59306392,Florian Chabrolle,1998-04-07,1998,95,['France'],False,,[],Montmorency
+Q66360824,Mehdi Boudjemaa,1998-04-07,1998,95,"['France', 'Algérie']",True,Maghreb,['Algérie'],Cergy
+Q58010381,Warren Tchimbembé,1998-04-21,1998,,['France'],False,,[],Gonesse
+Q56065094,Mons Bassouamina,1998-05-28,1998,,"['France', 'République du Congo']",True,Sub-Saharan Africa,['République du Congo'],Gonesse
+Q59180340,Loreintz Rosier,1998-08-14,1998,,['France'],False,,[],Gonesse
+Q58009580,Armand Laurienté,1998-12-04,1998,,['France'],False,,[],Gonesse
+Q98668913,Ousoumane Camara,1998-12-19,1998,95,['France'],False,,[],Pontoise
+Q100605826,Boubacari Doucouré,1999-03-19,1999,,"['France', 'Mali']",True,Sub-Saharan Africa,['Mali'],Bellefontaine
+Q129168108,Erwan Arab,1999-04-26,1999,,['France'],False,,[],Beaumont-sur-Oise
+Q66093660,Woyo Coulibaly,1999-05-26,1999,,['France'],False,,[],Gonesse
+Q101086202,Serge-Philippe Raux Yao,1999-05-30,1999,95,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Pontoise
+Q104849482,Natanael Ntolla,1999-07-01,1999,95,['France'],False,,[],Argenteuil
+Q66095792,Lilian Brassier,1999-11-02,1999,95,['France'],False,,[],Argenteuil
+Q110627169,Balthazar Pierret,2000-05-15,2000,75,['France'],False,,[],Cormeilles-en-Parisis
+Q104628274,Salim Diakite,2000-06-03,2000,,['France'],False,,[],Gonesse
+Q114035040,Théo Fonseca,2000-06-11,2000,95,"['France', 'Portugal']",True,Portugal,['Portugal'],Ermont
+Q99911701,Andy Pembélé,2000-07-04,2000,,['France'],False,,[],Gonesse
+Q55988107,Claudio Gomes,2000-07-23,2000,95,['France'],False,,[],Argenteuil
+Q69400275,Kévin Monzialo,2000-07-28,2000,95,['France'],False,,[],Pontoise
+Q124392516,Dominique Simon,2000-07-29,2000,95,['France'],False,,[],Pontoise
+Q107720845,Yohan Cassubie,2000-10-18,2000,,['France'],False,,[],Gonesse
+Q98937031,Niels Nkounkou,2000-11-01,2000,95,['France'],False,,[],Pontoise
+Q98642551,Aliou Traoré,2001-01-08,2001,95,['France'],False,,[],Sarcelles
+Q66134368,Grace Kazadi,2001-01-31,2001,95,"['France', 'République démocratique du Congo']",True,Sub-Saharan Africa,['République démocratique du Congo'],Montmorency
+Q117870828,Yoann Arlindo Araújo,2001-08-22,2001,95,['France'],False,,[],Soisy-sous-Montmorency
+Q119147407,Hussayn Touati,2001-10-03,2001,95,"['France', 'Algérie']",True,Maghreb,['Algérie'],Pontoise
+Q105640526,Yacouba Barry,2002-01-01,2002,,"['France', 'Sénégal']",True,Sub-Saharan Africa,['Sénégal'],Gonesse
+Q100026920,Noah Fatar,2002-02-15,2002,,"['France', 'Maroc']",True,Maghreb,['Maroc'],L'Isle-Adam
+Q106464295,Kenny Nagera,2002-02-21,2002,95,['France'],False,,[],Argenteuil
+Q118341361,Tidjany Touré,2002-07-15,2002,95,['France'],False,,[],Sarcelles
+Q74047936,Timothée Pembélé,2002-09-09,2002,,['France'],False,,[],Beaumont-sur-Oise
+Q99485545,Alan Virginius,2003-01-03,2003,95,['France'],False,,[],Soisy-sous-Montmorency
+Q99485406,Jason Ngouabi,2003-01-16,2003,95,"['France', 'République du Congo']",True,Sub-Saharan Africa,['République du Congo'],Sarcelles
+Q117474288,Thimothée Lo-Tutala,2003-02-13,2003,,['France'],False,,[],Gonesse
+Q98755402,Isaak Touré,2003-03-28,2003,,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Gonesse
+Q98089735,Laurina Fazer,2003-10-13,2003,95,['France'],False,,[],Argenteuil
+Q110185336,Derek Mazou-Sacko,2004-01-01,2004,95,"['France', ""Côte d'Ivoire""]",True,Sub-Saharan Africa,"[""Côte d'Ivoire""]",Sarcelles
+Q134706532,Melween N'Dongala,2004-01-01,2004,95,['France'],False,,[],Argenteuil
+Q108106700,Mathys Tel,2005-04-27,2005,95,['France'],False,,[],Sarcelles
+Q134445549,Tara Elimbi Gilbert,2005-06-09,2005,95,['France'],False,,[],Enghien-les-Bains
+Q118876617,Mohamed-Amine Bouchenna,2006-06-15,2006,,"['France', 'Maroc']",True,Maghreb,['Maroc'],Beaumont-sur-Oise
+Q129404148,Jaydee Canvot,2006-07-29,2006,95,['France'],False,,[],Argenteuil

@@ -141,8 +141,8 @@ def main():
 
     # Départements to collect
     departments = [
-        ("Q13045343", "Seine-Saint-Denis (93)", "93"),
-        ("Q14212344", "Val-d'Oise (95)", "95"),
+        ("Q12761", "Seine-Saint-Denis (93)", "93"),
+        ("Q12784", "Val-d'Oise (95)", "95"),
     ]
 
     # Create client

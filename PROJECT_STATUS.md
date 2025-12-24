@@ -1,8 +1,8 @@
 # Project Status
 
-**Generated automatically during overnight session**
+**Last updated**: 2025-12-24
 
-## Current State: Ready for Publication (pending 93/95 data)
+## Current State: Complete - Ready for Publication
 
 ### Data Collection Status
 
@@ -11,13 +11,13 @@
 | Paris | 75 | 113 | Complete |
 | Hauts-de-Seine | 92 | 165 | Complete |
 | Val-de-Marne | 94 | 171 | Complete |
+| Seine-Saint-Denis | 93 | 322 | Complete |
+| Val-d'Oise | 95 | 141 | Complete |
 | Yvelines | 78 | 88 | Complete |
 | Seine-et-Marne | 77 | 48 | Complete |
 | Essonne | 91 | 44 | Complete |
-| **Seine-Saint-Denis** | **93** | **0** | **PENDING** |
-| **Val-d'Oise** | **95** | **0** | **PENDING** |
 
-**Total (current)**: 713 players
+**Total**: 1,165 players
 
 ### Analysis Summary
 
@@ -25,16 +25,16 @@
 ┌─────────────────────────────────────────────────────────────┐
 │ KEY FINDINGS                                                │
 ├─────────────────────────────────────────────────────────────┤
-│ Total players:         713                                  │
-│ Dual nationals:        270 (37.9%)                          │
-│ African diaspora:      289 (40.5%)                          │
+│ Total players:         1,165                                │
+│ Dual nationals:        459 (39.4%)                          │
+│ African diaspora:      495 (42.5%)                          │
 ├─────────────────────────────────────────────────────────────┤
 │ TOP ORIGINS                                                 │
-│ 1. DR Congo:    41                                          │
-│ 2. Mali:        39                                          │
-│ 3. Senegal:     29                                          │
-│ 4. Algeria:     28                                          │
-│ 5. Ivory Coast: 25                                          │
+│ 1. Mali:        78                                          │
+│ 2. Algeria:     62                                          │
+│ 3. DR Congo:    54                                          │
+│ 4. Morocco:     46                                          │
+│ 5. Ivory Coast: 41                                          │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -79,19 +79,6 @@ aa94c81 Initial commit: IDF footballers dataset (713 players)
 
 ### Next Steps
 
-1. **Collect 93/95 data**: `make retry-93-95`
-2. **Push to GitHub**: `gh repo create psg-diaspora-dataset --public --source=. --push`
-3. **Upload to HuggingFace**: `./venv/bin/python scripts/upload_huggingface.py`
-4. **Write Medium article**: Use docs/ARTICLE_DRAFT.md as template
-
-### Rate Limit Status
-
-Wikidata rate limit active. Typically clears after:
-- Light limits: 15-30 minutes
-- Heavy limits: 1-2 hours
-
-To check:
-```bash
-curl -s -o /dev/null -w "%{http_code}" "https://query.wikidata.org/sparql?query=SELECT%20*%20WHERE%20%7B%20%3Fs%20%3Fp%20%3Fo%20%7D%20LIMIT%201"
-```
-If returns 200, rate limit cleared.
+1. **Push to GitHub**: `gh repo create psg-diaspora-dataset --public --source=. --push`
+2. **Upload to HuggingFace**: `huggingface-cli upload ldiaby/idf-footballers data/huggingface --repo-type dataset`
+3. **Write Medium article**: Part 2 based on data findings

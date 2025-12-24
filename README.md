@@ -10,12 +10,12 @@
 
 | Metric | Value |
 |--------|-------|
-| Professional footballers (1980-2006) | **713** |
-| Dual nationals | **37.9%** |
-| African diaspora background | **40.5%** |
-| Top diaspora origin | DR Congo (41), Mali (39), Senegal (29) |
+| Professional footballers (1980-2006) | **1,165** |
+| Dual nationals | **39.4%** |
+| African diaspora background | **42.5%** |
+| Top diaspora origins | Mali (78), Algeria (62), DR Congo (54), Morocco (46) |
 
-> ⚠️ **Note**: Data for Seine-Saint-Denis (93) and Val-d'Oise (95) is currently missing due to Wikidata rate limiting. These are key départements for talent production.
+All 8 Île-de-France départements are now included in the dataset.
 
 ## Visualizations
 
@@ -142,11 +142,8 @@ jupyter notebook notebooks/01_data_exploration.ipynb
 ## Data Collection
 
 ```bash
-# Collect from Wikidata (already done, 713 players)
+# Collect from Wikidata (1,165 players from all 8 départements)
 python src/collectors/wikidata.py
-
-# Retry for missing départements (93, 95)
-python scripts/retry_93_95.py
 ```
 
 ## Ethical Considerations

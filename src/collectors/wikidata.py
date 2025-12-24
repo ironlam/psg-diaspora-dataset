@@ -32,12 +32,12 @@ class WikidataCollector:
     DEPARTMENTS = {
         "75": "Q90",        # Paris
         "77": "Q12753",     # Seine-et-Marne
-        "78": "Q12820",     # Yvelines (corrected)
+        "78": "Q12820",     # Yvelines
         "91": "Q12549",     # Essonne
         "92": "Q12543",     # Hauts-de-Seine
-        "93": "Q13045343",  # Seine-Saint-Denis (corrected)
-        "94": "Q12788",     # Val-de-Marne (corrected)
-        "95": "Q14212344",  # Val-d'Oise (corrected)
+        "93": "Q12761",     # Seine-Saint-Denis
+        "94": "Q12788",     # Val-de-Marne
+        "95": "Q12784",     # Val-d'Oise
     }
 
     def __init__(self, output_dir: Path = Path("data/raw/wikidata")):
