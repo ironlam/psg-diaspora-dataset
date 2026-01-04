@@ -19,6 +19,16 @@
 
 ## Key Questions to Explore
 
+### 0. The Data Underestimates Reality
+
+Before diving into analysis, acknowledge a critical limitation:
+
+**42.5% is a floor, not a ceiling.**
+
+The dataset captures citizenship, not heritage. Players like Pogba (Guinean parents) and Kanté (Malian parents) appear as "French only." If we could capture parental origins, the diaspora figure would likely exceed 60%.
+
+This means the connection between Île-de-France football and African migration is **even stronger** than the data shows.
+
 ### 1. Why Football?
 
 Not "why are people with African origins good at football" (essentialist, wrong question).

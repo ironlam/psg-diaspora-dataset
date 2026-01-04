@@ -301,9 +301,11 @@ plt.savefig("departments_bar.png", bbox_inches="tight")
 |--------|-------|
 | Total players | 1,165 |
 | Dual nationals | 39.4% |
-| African diaspora | 42.5% |
+| African diaspora | **42.5%** (lower bound*) |
 | Top département | Seine-Saint-Denis (322) |
 | Top origin country | Mali (78) |
+
+*Based on citizenship only. Actual heritage-based figure likely 60%+ (see Limitations).
 
 ---
 
@@ -321,10 +323,27 @@ This dataset could be used for:
 
 ## Limitations
 
-- **Survivorship bias**: Only players with Wikipedia entries
-- **Birthplace ≠ training location**: A player born in Bondy might have trained in Lyon
-- **No performance metrics**: No goals, caps, market value (requires Transfermarkt enrichment)
-- **Static snapshot**: Wikidata changes; dataset is frozen at collection date
+### Critical: Citizenship ≠ Heritage
+
+Wikidata records **legal citizenships**, not ancestry or heritage. This significantly underestimates diaspora connections.
+
+**Real examples from the dataset:**
+
+| Player | Wikidata shows | Reality |
+|--------|----------------|---------|
+| Kylian Mbappé | France + Cameroon | Father Cameroonian, **mother Algerian** (not captured) |
+| Paul Pogba | France only | **Both parents from Guinea** (not captured) |
+| N'Golo Kanté | France only | **Parents from Mali** (not captured) |
+
+**Implication**: The 42.5% "African diaspora" figure is a **lower bound**. The actual heritage-based percentage would be significantly higher—possibly 60%+ if we could capture parental origins.
+
+### Other limitations
+
+- **Birthplace ≠ childhood location**: Mbappé is recorded as born in Paris 19e, but grew up in Bondy (93)
+- **Survivorship bias**: Only players notable enough for Wikipedia entries
+- **No performance metrics**: A Ligue 2 player and Mbappé count equally
+- **Static snapshot**: Wikidata changes; dataset frozen at collection date
+- **~90 unmapped players**: Birthplaces that couldn't be matched to a département
 
 ---
 
