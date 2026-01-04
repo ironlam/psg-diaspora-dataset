@@ -22,15 +22,25 @@ def load_data(filepath: Path) -> list[dict]:
     return data.get("players", data)
 
 
+def normalize_name(name: str) -> str:
+    """Normalize a name for matching (lowercase, remove accents variations)."""
+    import unicodedata
+    # Lowercase
+    name = name.lower()
+    # Normalize unicode (handle ᵉ vs e, etc.)
+    name = unicodedata.normalize('NFKD', name)
+    return name
+
+
 def extract_department_from_birthplace(birthplace_name: str) -> str | None:
     """
     Extract département from birthplace name.
     This is approximate - based on known patterns.
     """
-    name = birthplace_name.lower()
+    name = normalize_name(birthplace_name)
 
     # Paris arrondissements
-    if "arrondissement de paris" in name or "paris" in name:
+    if "arrondissement" in name and "paris" in name:
         return "75"
 
     # Known city -> département mappings (partial)
@@ -175,10 +185,66 @@ def extract_department_from_birthplace(birthplace_name: str) -> str | None:
         "cormeilles-en-parisis": "95",
         "saint-gratien": "95",
         "soisy-sous-montmorency": "95",
+        "gonesse": "95",
+        "fosses": "95",
+        "montmagny": "95",
+        "arnouville": "95",
+        # Additional 91 cities
+        "orsay": "91",
+        "étampes": "91",
+        "draveil": "91",
+        "yerres": "91",
+        "montgeron": "91",
+        "épinay-sous-sénart": "91",
+        "mennecy": "91",
+        "fleury-mérogis": "91",
+        # Additional 92 cities
+        "sèvres": "92",
+        "saint-cloud": "92",
+        "bourg-la-reine": "92",
+        "malakoff": "92",
+        "le plessis": "92",
+        "ville-d'avray": "92",
+        "la garenne-colombes": "92",
+        "vaucresson": "92",
+        "marnes-la-coquette": "92",
+        # Additional 94 cities
+        "saint-maurice": "94",
+        "boissy-saint-léger": "94",
+        "le perreux-sur-marne": "94",
+        "limeil-brévannes": "94",
+        "chennevières-sur-marne": "94",
+        "bry-sur-marne": "94",
+        "bonneuil-sur-marne": "94",
+        "ormesson-sur-marne": "94",
+        "valenton": "94",
+        "chevilly-larue": "94",
+        "rungis": "94",
+        "villecresnes": "94",
+        # Additional 77 cities
+        "bussy-saint-georges": "77",
+        "le mée-sur-seine": "77",
+        "noisiel": "77",
+        "lognes": "77",
+        "vaires-sur-marne": "77",
+        "courtry": "77",
+        "mitry-mory": "77",
+        "claye-souilly": "77",
+        # Additional 78 cities
+        "maurepas": "78",
+        "guyancourt": "78",
+        "vélizy-villacoublay": "78",
+        "le pecq": "78",
+        "maisons-laffitte": "78",
+        "achères": "78",
+        "marly-le-roi": "78",
+        "viroflay": "78",
+        "jouy-en-josas": "78",
     }
 
+    # Normalize city keys too for matching
     for city, dept in city_to_dept.items():
-        if city in name:
+        if normalize_name(city) in name or city in name:
             return dept
 
     return None
@@ -311,10 +377,12 @@ def analyze_dataset(players: list[dict]) -> dict:
             except ValueError:
                 pass
 
-        # Department
-        birthplace = player.get("birthplace", {})
-        bp_name = birthplace.get("name", "") if isinstance(birthplace, dict) else ""
-        dept = extract_department_from_birthplace(bp_name)
+        # Department - check if already set, otherwise extract from birthplace
+        dept = player.get("department")
+        if not dept:
+            birthplace = player.get("birthplace", {})
+            bp_name = birthplace.get("name", "") if isinstance(birthplace, dict) else ""
+            dept = extract_department_from_birthplace(bp_name)
         if dept:
             departments[dept] += 1
 
@@ -325,10 +393,10 @@ def analyze_dataset(players: list[dict]) -> dict:
             for country in diaspora["diaspora_countries"]:
                 diaspora_countries[country] += 1
 
-        # Enrich player record
+        # Enrich player record (use dept we already extracted)
         enriched = {
             **player,
-            "department": dept,
+            "department": dept,  # Already extracted above
             "birth_year": int(dob[:4]) if dob and len(dob) >= 4 else None,
             "is_dual_national": diaspora["is_dual_national"],
             "diaspora_region": diaspora["diaspora_region"],
