@@ -38,6 +38,10 @@ clean:
 notebook:
 	./venv/bin/jupyter notebook notebooks/
 
+# Run Streamlit app
+app:
+	./venv/bin/streamlit run app/app.py
+
 # Full pipeline
 all: analyze charts test
 	@echo "Pipeline complete!"
@@ -52,5 +56,6 @@ help:
 	@echo "  make collect      - Collect data from Wikidata"
 	@echo "  make retry-93-95  - Retry 93/95 data collection"
 	@echo "  make notebook     - Start Jupyter notebook"
+	@echo "  make app          - Start Streamlit visualization app"
 	@echo "  make all          - Run full pipeline"
 	@echo "  make clean        - Clean generated files"
