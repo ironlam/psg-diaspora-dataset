@@ -42,9 +42,19 @@ def load_data():
     # Ensure department is integer
     df['birth_department'] = df['birth_department'].astype(int)
 
-    # Parse nationalities from string representation
-    df['nationalities'] = df['nationalities'].apply(lambda x: eval(x) if pd.notna(x) and isinstance(x, str) else x if isinstance(x, list) else [])
-    df['diaspora_countries'] = df['diaspora_countries'].apply(lambda x: eval(x) if pd.notna(x) and isinstance(x, str) and x != '[]' else x if isinstance(x, list) else [])
+    # Parse nationalities - handle both string and list formats
+    def parse_list_field(x):
+        if isinstance(x, list):
+            return x
+        if isinstance(x, str):
+            try:
+                return eval(x)
+            except:
+                return []
+        return []
+
+    df['nationalities'] = df['nationalities'].apply(parse_list_field)
+    df['diaspora_countries'] = df['diaspora_countries'].apply(parse_list_field)
 
     # Fill NaN values
     df['diaspora_region'] = df['diaspora_region'].fillna('None')
