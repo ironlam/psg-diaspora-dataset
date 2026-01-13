@@ -50,3 +50,7 @@ models/
 tmp/
 temp/
 .cache/
+
+# Article drafts (not for GitHub)
+docs/ARTICLE_*.md
+docs/SOCIOLOGICAL_*.md

@@ -12,8 +12,9 @@
 **Author**: Lamine DIABY
 
 **Repositories**:
-- GitHub: `ldiaby/psg-diaspora-dataset` (not yet pushed)
-- HuggingFace: `ldiaby/idf-footballers` (not yet uploaded)
+- GitHub: `ironlam/psg-diaspora-dataset` (not yet pushed)
+- HuggingFace Dataset: `ironlam/idf-footballers` (not yet uploaded)
+- HuggingFace Space: `ironlam/idf-footballers` (for Streamlit app)
 
 ---
 
@@ -196,8 +197,9 @@ aa94c81 Initial commit: IDF footballers dataset (713 players)
 ## Remaining Tasks
 
 ### To Publish
-1. **Push to GitHub**: `gh repo create psg-diaspora-dataset --public --source=. --push`
-2. **Upload to HuggingFace**: `huggingface-cli upload ldiaby/idf-footballers data/huggingface --repo-type dataset`
+1. **Push to GitHub**: `gh repo create ironlam/psg-diaspora-dataset --public --source=. --push`
+2. **Upload to HuggingFace Dataset**: `huggingface-cli upload ironlam/idf-footballers data/huggingface --repo-type dataset`
+3. **Deploy Streamlit to HuggingFace Space**: Create space at huggingface.co/spaces/ironlam/idf-footballers
 
 ### Articles to Write
 1. **Technical article** (for developers): `docs/ARTICLE_PART2_DRAFT.md` - nearly complete
@@ -230,8 +232,8 @@ make test                     # Run tests
 ./venv/bin/python scripts/retry_93_95.py        # Retry 93/95 only
 
 # Publish
-gh repo create psg-diaspora-dataset --public --source=. --push
-huggingface-cli upload ldiaby/idf-footballers data/huggingface --repo-type dataset
+gh repo create ironlam/psg-diaspora-dataset --public --source=. --push
+huggingface-cli upload ironlam/idf-footballers data/huggingface --repo-type dataset
 ```
 
 ---
