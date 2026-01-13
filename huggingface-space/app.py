@@ -7,6 +7,7 @@ Interactive Streamlit app to explore the Île-de-France footballers dataset.
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 from datasets import load_dataset
 
 # Page config
@@ -267,22 +268,16 @@ def main():
         year_counts = filtered_df['birth_year'].value_counts().sort_index()
 
         if len(year_counts) > 0:
-            # Create explicit DataFrame for plotly
-            year_df = pd.DataFrame({
-                'Birth Year': [int(y) for y in year_counts.index],
-                'Number of Players': [int(c) for c in year_counts.values]
-            })
+            years = [int(y) for y in year_counts.index]
+            counts = [int(c) for c in year_counts.values]
 
-            fig = px.bar(
-                year_df,
-                x='Birth Year',
-                y='Number of Players',
-                color='Number of Players',
-                color_continuous_scale='Greens'
-            )
+            fig = go.Figure(data=[
+                go.Bar(x=years, y=counts, marker_color='green')
+            ])
             fig.update_layout(
+                xaxis_title='Birth Year',
+                yaxis_title='Number of Players',
                 height=350,
-                coloraxis_showscale=False,
                 plot_bgcolor='rgba(0,0,0,0)',
                 paper_bgcolor='rgba(0,0,0,0)',
                 xaxis=dict(tickmode='linear', dtick=5)
@@ -345,30 +340,36 @@ def main():
     if map_data:
         map_df = pd.DataFrame(map_data)
 
-        # Ensure numeric types
-        map_df['lat'] = map_df['lat'].astype(float)
-        map_df['lon'] = map_df['lon'].astype(float)
-        map_df['count'] = map_df['count'].astype(int)
+        # Scale marker sizes (min 15, max 60)
+        max_count = map_df['count'].max()
+        sizes = [max(15, int(40 * c / max_count) + 15) for c in map_df['count']]
 
-        fig = px.scatter_mapbox(
-            map_df,
-            lat='lat',
-            lon='lon',
-            size='count',
-            color='count',
-            hover_name='name',
-            hover_data={'count': True, 'lat': False, 'lon': False, 'department': False},
-            color_continuous_scale='Reds',
-            size_max=50,
-            zoom=9,
-            center={'lat': 48.85, 'lon': 2.35},
-            mapbox_style='carto-positron'
-        )
+        fig = go.Figure(go.Scattermapbox(
+            lat=map_df['lat'].tolist(),
+            lon=map_df['lon'].tolist(),
+            mode='markers',
+            marker=go.scattermapbox.Marker(
+                size=sizes,
+                color=map_df['count'].tolist(),
+                colorscale='Reds',
+                showscale=True,
+                colorbar=dict(title='Players')
+            ),
+            text=map_df['name'].tolist(),
+            hoverinfo='text+name',
+            customdata=map_df['count'].tolist(),
+            hovertemplate='%{text}<br>Players: %{customdata}<extra></extra>'
+        ))
+
         fig.update_layout(
+            mapbox=dict(
+                style='carto-positron',
+                center=dict(lat=48.85, lon=2.35),
+                zoom=9
+            ),
             height=500,
             margin={'r': 0, 't': 0, 'l': 0, 'b': 0}
         )
-        fig.update_traces(marker=dict(sizemin=10))  # Minimum marker size
         st.plotly_chart(fig, use_container_width=True)
     else:
         st.info("No geographic data for current filters")
