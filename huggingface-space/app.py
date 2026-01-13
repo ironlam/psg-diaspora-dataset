@@ -244,9 +244,13 @@ def main():
         diaspora_counts = filtered_df[filtered_df['diaspora_region'] != 'None']['diaspora_region'].value_counts()
 
         if len(diaspora_counts) > 0:
+            # Explicit conversion to lists
+            values = [int(v) for v in diaspora_counts.values]
+            names = [str(n) for n in diaspora_counts.index]
+
             fig = px.pie(
-                values=diaspora_counts.values,
-                names=diaspora_counts.index,
+                values=values,
+                names=names,
                 hole=0.4,
                 color_discrete_sequence=px.colors.qualitative.Set2
             )
