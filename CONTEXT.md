@@ -1,6 +1,6 @@
 # Project Context - IDF Footballers Dataset
 
-**Last updated**: 2025-01-04
+**Last updated**: 2026-01-13
 **Purpose**: Preserve full context before conversation compacting
 
 ---
@@ -133,7 +133,11 @@ Mbappé recorded as born in Paris 19e, but **grew up in Bondy (93)**.
 ```
 psg-diaspora-dataset/
 ├── app/
-│   └── app.py                 # Streamlit interactive app
+│   └── app.py                 # Streamlit app (local version)
+├── huggingface-space/
+│   ├── app.py                 # Streamlit app (HF Space version)
+│   ├── requirements.txt
+│   └── README.md              # Space metadata
 ├── data/
 │   ├── raw/wikidata/
 │   │   ├── idf_footballers.json      # Main dataset (1165 players)
@@ -196,14 +200,20 @@ aa94c81 Initial commit: IDF footballers dataset (713 players)
 
 ## Remaining Tasks
 
-### To Publish
-1. **Push to GitHub**: `gh repo create ironlam/psg-diaspora-dataset --public --source=. --push`
-2. **Upload to HuggingFace Dataset**: `huggingface-cli upload ironlam/idf-footballers data/huggingface --repo-type dataset`
-3. **Deploy Streamlit to HuggingFace Space**: Create space at huggingface.co/spaces/ironlam/idf-footballers
+### To Publish (DONE)
+1. **GitHub**: https://github.com/ironlam/psg-diaspora-dataset
+2. **HuggingFace Dataset**: https://huggingface.co/datasets/ironlam/idf-footballers
+3. **HuggingFace Space**: https://huggingface.co/spaces/ironlam/idf-footballers
 
-### Articles to Write
-1. **Technical article** (for developers): `docs/ARTICLE_PART2_DRAFT.md` - nearly complete
-2. **Sociological article** (for general public): `docs/SOCIOLOGICAL_ARTICLE_IDEA.md` - outline only
+### Commands (updated - use `hf` not `huggingface-cli`)
+```bash
+hf upload ironlam/idf-footballers data/huggingface --repo-type dataset
+hf upload ironlam/idf-footballers huggingface-space --repo-type space
+```
+
+### Articles
+1. **Part 1** (sociological): Published on Medium - https://medium.com/@diaby.lamine/franciliens-et-psg-une-histoire-de-migrations-de-quartiers-et-de-football-partie-1-2f66eaf45321
+2. **Part 2** (technical): Ready in `docs/ARTICLE_PART2_FRENCH.md` - copy to Medium
 
 ### Future Enhancements
 - Collect Essonne (91) data - currently 0 players
@@ -222,7 +232,7 @@ aa94c81 Initial commit: IDF footballers dataset (713 players)
 make setup                    # Create venv and install deps
 
 # Run
-make app                      # Start Streamlit app
+make app                      # Start Streamlit app (local)
 make analyze                  # Run analysis pipeline
 make charts                   # Generate static charts
 make test                     # Run tests
@@ -231,9 +241,10 @@ make test                     # Run tests
 ./venv/bin/python src/collectors/wikidata.py    # Full collection
 ./venv/bin/python scripts/retry_93_95.py        # Retry 93/95 only
 
-# Publish
-gh repo create ironlam/psg-diaspora-dataset --public --source=. --push
-huggingface-cli upload ironlam/idf-footballers data/huggingface --repo-type dataset
+# HuggingFace (use `hf` not deprecated `huggingface-cli`)
+hf auth whoami                                              # Check login
+hf upload ironlam/idf-footballers data/huggingface --repo-type dataset
+hf upload ironlam/idf-footballers huggingface-space --repo-type space
 ```
 
 ---
