@@ -42,16 +42,25 @@ def load_data():
     # Ensure department is integer
     df['birth_department'] = df['birth_department'].astype(int)
 
-    # Parse nationalities - handle both string and list formats
+    # Parse list fields - handle string, list, and numpy array formats
     def parse_list_field(x):
+        if x is None:
+            return []
         if isinstance(x, list):
             return x
         if isinstance(x, str):
+            if x == '[]' or x == '':
+                return []
             try:
-                return eval(x)
+                result = eval(x)
+                return result if isinstance(result, list) else []
             except:
                 return []
-        return []
+        # Handle numpy arrays or other iterables
+        try:
+            return list(x)
+        except:
+            return []
 
     df['nationalities'] = df['nationalities'].apply(parse_list_field)
     df['diaspora_countries'] = df['diaspora_countries'].apply(parse_list_field)
@@ -170,9 +179,10 @@ def main():
         st.metric("Dual Nationals", f"{dual_pct:.1f}%", help="Players with 2+ citizenships recorded in Wikidata.")
 
     with col3:
-        african_diaspora_count = len(filtered_df[filtered_df['diaspora_region'] == 'Africa'])
+        african_regions = ['Sub-Saharan Africa', 'Maghreb', 'Comoros']
+        african_diaspora_count = len(filtered_df[filtered_df['diaspora_region'].isin(african_regions)])
         african_diaspora_pct = (african_diaspora_count / len(filtered_df) * 100) if len(filtered_df) > 0 else 0
-        st.metric("African Diaspora*", f"{african_diaspora_pct:.1f}%", help="Based on citizenship only. Actual heritage is likely higher.")
+        st.metric("African Diaspora*", f"{african_diaspora_pct:.1f}%", help="Includes Sub-Saharan Africa, Maghreb, Comoros. Based on citizenship only.")
 
     with col4:
         if len(filtered_df) > 0:

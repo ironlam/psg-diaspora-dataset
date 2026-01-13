@@ -163,9 +163,10 @@ def main():
         st.metric("Dual Nationals", f"{dual_pct:.1f}%", help="Players with 2+ citizenships recorded in Wikidata.")
 
     with col3:
-        african_diaspora_count = len(filtered_df[filtered_df['diaspora_region'] == 'Africa'])
+        african_regions = ['Sub-Saharan Africa', 'Maghreb', 'Comoros']
+        african_diaspora_count = len(filtered_df[filtered_df['diaspora_region'].isin(african_regions)])
         african_diaspora_pct = (african_diaspora_count / len(filtered_df) * 100) if len(filtered_df) > 0 else 0
-        st.metric("African Diaspora*", f"{african_diaspora_pct:.1f}%", help="Based on citizenship only. Actual heritage is likely higher.")
+        st.metric("African Diaspora*", f"{african_diaspora_pct:.1f}%", help="Includes Sub-Saharan Africa, Maghreb, Comoros. Based on citizenship only.")
 
     with col4:
         if len(filtered_df) > 0:
