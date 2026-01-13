@@ -290,25 +290,20 @@ def main():
 
         if all_countries:
             country_counts = pd.Series(all_countries).value_counts().head(10)
+            names = country_counts.index.tolist()
+            values = [int(v) for v in country_counts.values]
 
-            fig = px.bar(
-                x=country_counts.values,
-                y=country_counts.index,
-                orientation='h',
-                color=country_counts.values,
-                color_continuous_scale='Oranges',
-                text=country_counts.values
-            )
+            fig = go.Figure(data=[
+                go.Bar(y=names, x=values, orientation='h', marker_color='orange', text=values, textposition='outside')
+            ])
             fig.update_layout(
                 xaxis_title="Number of Players",
                 yaxis_title="",
-                coloraxis_showscale=False,
                 height=350,
-                yaxis={'categoryorder': 'total ascending'},
+                yaxis=dict(categoryorder='total ascending'),
                 plot_bgcolor='rgba(0,0,0,0)',
                 paper_bgcolor='rgba(0,0,0,0)'
             )
-            fig.update_traces(textposition='outside')
             st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("No origin country data for current filters")
