@@ -31,10 +31,10 @@ DEPARTMENTS = {
 }
 
 
-@st.cache_data
+@st.cache_data(ttl=3600)  # Cache for 1 hour max
 def load_data():
     """Load and cache the dataset from HuggingFace."""
-    dataset = load_dataset("ironlam/idf-footballers", split="train")
+    dataset = load_dataset("ironlam/idf-footballers", split="train", download_mode="force_redownload")
     df = dataset.to_pandas()
 
     # Drop rows with missing department (can't map them)
@@ -87,6 +87,15 @@ def main():
     # Header
     st.title("⚽ IDF Footballers Dataset")
     st.markdown("*Exploring professional footballers born in Île-de-France (1980-2006)*")
+
+    # Debug info (temporary)
+    with st.expander("🔧 Debug Info"):
+        st.write(f"Total rows loaded: {len(df)}")
+        st.write(f"birth_department dtype: {df['birth_department'].dtype}")
+        st.write("Department counts:")
+        st.write(df['birth_department'].value_counts().to_dict())
+        st.write("Diaspora region counts:")
+        st.write(df['diaspora_region'].value_counts().to_dict())
 
     # Methodology expander
     with st.expander("ℹ️ About this data & methodology"):
