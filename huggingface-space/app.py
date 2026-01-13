@@ -267,18 +267,23 @@ def main():
         year_counts = filtered_df['birth_year'].value_counts().sort_index()
 
         if len(year_counts) > 0:
+            # Convert to lists explicitly to avoid plotly index issues
+            years = [int(y) for y in year_counts.index.tolist()]
+            counts = year_counts.values.tolist()
+
             fig = px.bar(
-                x=year_counts.index,
-                y=year_counts.values,
+                x=years,
+                y=counts,
                 labels={'x': 'Birth Year', 'y': 'Number of Players'},
-                color=year_counts.values,
+                color=counts,
                 color_continuous_scale='Greens'
             )
             fig.update_layout(
                 height=350,
                 coloraxis_showscale=False,
                 plot_bgcolor='rgba(0,0,0,0)',
-                paper_bgcolor='rgba(0,0,0,0)'
+                paper_bgcolor='rgba(0,0,0,0)',
+                xaxis=dict(tickmode='linear', dtick=5)  # Show ticks every 5 years
             )
             st.plotly_chart(fig, use_container_width=True)
 
@@ -336,7 +341,7 @@ def main():
     if map_data:
         map_df = pd.DataFrame(map_data)
 
-        fig = px.scatter_map(
+        fig = px.scatter_mapbox(
             map_df,
             lat='lat',
             lon='lon',
@@ -347,14 +352,16 @@ def main():
             color_continuous_scale='Reds',
             size_max=60,
             zoom=8.5,
-            center={'lat': 48.85, 'lon': 2.35}
+            center={'lat': 48.85, 'lon': 2.35},
+            mapbox_style='open-street-map'
         )
         fig.update_layout(
-            map_style='open-street-map',
             height=500,
             margin={'r': 0, 't': 0, 'l': 0, 'b': 0}
         )
         st.plotly_chart(fig, use_container_width=True)
+    else:
+        st.info("No geographic data for current filters")
 
     st.divider()
 
