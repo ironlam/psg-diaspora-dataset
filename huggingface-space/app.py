@@ -267,15 +267,17 @@ def main():
         year_counts = filtered_df['birth_year'].value_counts().sort_index()
 
         if len(year_counts) > 0:
-            # Convert to lists explicitly to avoid plotly index issues
-            years = [int(y) for y in year_counts.index.tolist()]
-            counts = year_counts.values.tolist()
+            # Create explicit DataFrame for plotly
+            year_df = pd.DataFrame({
+                'Birth Year': [int(y) for y in year_counts.index],
+                'Number of Players': [int(c) for c in year_counts.values]
+            })
 
             fig = px.bar(
-                x=years,
-                y=counts,
-                labels={'x': 'Birth Year', 'y': 'Number of Players'},
-                color=counts,
+                year_df,
+                x='Birth Year',
+                y='Number of Players',
+                color='Number of Players',
                 color_continuous_scale='Greens'
             )
             fig.update_layout(
@@ -283,9 +285,11 @@ def main():
                 coloraxis_showscale=False,
                 plot_bgcolor='rgba(0,0,0,0)',
                 paper_bgcolor='rgba(0,0,0,0)',
-                xaxis=dict(tickmode='linear', dtick=5)  # Show ticks every 5 years
+                xaxis=dict(tickmode='linear', dtick=5)
             )
             st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info("No birth year data for current filters")
 
     with col2:
         st.subheader("🏆 Top Origin Countries")
@@ -341,6 +345,11 @@ def main():
     if map_data:
         map_df = pd.DataFrame(map_data)
 
+        # Ensure numeric types
+        map_df['lat'] = map_df['lat'].astype(float)
+        map_df['lon'] = map_df['lon'].astype(float)
+        map_df['count'] = map_df['count'].astype(int)
+
         fig = px.scatter_mapbox(
             map_df,
             lat='lat',
@@ -350,15 +359,16 @@ def main():
             hover_name='name',
             hover_data={'count': True, 'lat': False, 'lon': False, 'department': False},
             color_continuous_scale='Reds',
-            size_max=60,
-            zoom=8.5,
+            size_max=50,
+            zoom=9,
             center={'lat': 48.85, 'lon': 2.35},
-            mapbox_style='open-street-map'
+            mapbox_style='carto-positron'
         )
         fig.update_layout(
             height=500,
             margin={'r': 0, 't': 0, 'l': 0, 'b': 0}
         )
+        fig.update_traces(marker=dict(sizemin=10))  # Minimum marker size
         st.plotly_chart(fig, use_container_width=True)
     else:
         st.info("No geographic data for current filters")
