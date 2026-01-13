@@ -90,12 +90,12 @@ def main():
 
     # Debug info (temporary)
     with st.expander("🔧 Debug Info"):
-        st.write(f"Total rows loaded: {len(df)}")
-        st.write(f"birth_department dtype: {df['birth_department'].dtype}")
-        st.write("Department counts:")
-        st.write(df['birth_department'].value_counts().to_dict())
-        st.write("Diaspora region counts:")
-        st.write(df['diaspora_region'].value_counts().to_dict())
+        st.write(f"**Total rows loaded:** {len(df)}")
+        st.write(f"**birth_department dtype:** {df['birth_department'].dtype}")
+        dept_vc = df['birth_department'].value_counts()
+        st.write(f"**Department counts:** {dict(zip([int(x) for x in dept_vc.index], [int(x) for x in dept_vc.values]))}")
+        dias_vc = df['diaspora_region'].value_counts(dropna=False)
+        st.write(f"**Diaspora counts:** {dict(zip([str(x) for x in dias_vc.index], [int(x) for x in dias_vc.values]))}")
 
     # Methodology expander
     with st.expander("ℹ️ About this data & methodology"):
@@ -210,65 +210,46 @@ def main():
     with col1:
         st.subheader("📍 Players by Department")
 
-        # Build department counts with proper labels
-        dept_data = []
-        for dept_code in DEPARTMENTS.keys():
-            count = len(filtered_df[filtered_df['birth_department'] == dept_code])
-            dept_data.append({
-                'code': dept_code,
-                'label': get_dept_label(dept_code),
-                'count': count
-            })
+        # Use value_counts directly on the filtered data
+        dept_counts = filtered_df['birth_department'].value_counts()
 
-        dept_df = pd.DataFrame(dept_data)
-        dept_df = dept_df[dept_df['count'] > 0].sort_values('count', ascending=True)
+        if len(dept_counts) > 0:
+            labels = [get_dept_label(int(d)) for d in dept_counts.index]
+            counts = [int(c) for c in dept_counts.values]
 
-        if len(dept_df) > 0:
-            fig = px.bar(
-                dept_df,
-                x='count',
-                y='label',
-                orientation='h',
-                color='count',
-                color_continuous_scale='Blues',
-                text='count'
-            )
+            fig = go.Figure(data=[
+                go.Bar(y=labels, x=counts, orientation='h', marker_color='steelblue', text=counts, textposition='outside')
+            ])
             fig.update_layout(
-                showlegend=False,
                 xaxis_title="Number of Players",
                 yaxis_title="",
-                coloraxis_showscale=False,
                 height=400,
                 plot_bgcolor='rgba(0,0,0,0)',
                 paper_bgcolor='rgba(0,0,0,0)',
-                font=dict(size=12)
+                yaxis=dict(categoryorder='total ascending')
             )
-            fig.update_traces(textposition='outside')
             st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("No data for current filters")
 
     with col2:
         st.subheader("🌍 Diaspora Regions")
-        diaspora_counts = filtered_df[filtered_df['diaspora_region'] != 'None']['diaspora_region'].value_counts()
+        # Filter out None/NaN values and count
+        diaspora_df = filtered_df[filtered_df['diaspora_region'].notna() & (filtered_df['diaspora_region'] != 'None')]
+        diaspora_counts = diaspora_df['diaspora_region'].value_counts()
 
         if len(diaspora_counts) > 0:
-            # Explicit conversion to lists
+            names = diaspora_counts.index.tolist()
             values = [int(v) for v in diaspora_counts.values]
-            names = [str(n) for n in diaspora_counts.index]
 
-            fig = px.pie(
-                values=values,
-                names=names,
-                hole=0.4,
-                color_discrete_sequence=px.colors.qualitative.Set2
-            )
+            fig = go.Figure(data=[
+                go.Pie(labels=names, values=values, hole=0.4, textinfo='percent+label', textposition='inside')
+            ])
             fig.update_layout(
                 height=400,
                 plot_bgcolor='rgba(0,0,0,0)',
                 paper_bgcolor='rgba(0,0,0,0)'
             )
-            fig.update_traces(textposition='inside', textinfo='percent+label')
             st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("No diaspora data for current filters")
